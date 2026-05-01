@@ -1,0 +1,22 @@
+=== stat ===
+  File: /home/ubuntu/upload/pasted_file_8IjNKJ_Manus专用
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: fe00h/65024d	Inode: 246937      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/  ubuntu)   Gid: ( 1000/  ubuntu)
+Access: 2026-04-30 20:38:00.575286414 -0400
+Modify: 2026-04-30 20:34:53.742610034 -0400
+Change: 2026-04-30 20:34:53.742610034 -0400
+ Birth: 2026-04-30 20:34:53.742610034 -0400
+=== file ===
+/home/ubuntu/upload/pasted_file_8IjNKJ_Manus专用: empty
+=== ls upload ===
+total 8
+drwxr-xr-x  2 ubuntu ubuntu 4096 Apr 30 20:34 .
+drwxr-x--- 19 ubuntu ubuntu 4096 Apr 30 20:34 ..
+-rw-r--r--  1 ubuntu ubuntu    0 Apr 30 20:34 pasted_file_8IjNKJ_Manus专用
+=== python inspect ===
+exists True
+is_dir False
+is_file True
+size 0
+head_bytes b''

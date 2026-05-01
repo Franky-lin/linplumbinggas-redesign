@@ -1,0 +1,68 @@
+Uploading file (webdev private): cctv_drain_inspection.jpg (size: 496206 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/cctv_drain_inspection_32f6ee3d.jpg
+Uploading file (webdev private): commercial_plant_pipework.jpg (size: 315066 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/commercial_plant_pipework_07334ac4.jpg
+Uploading file (webdev private): complex_pipework.jpg (size: 184787 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/complex_pipework_af4ab774.jpg
+Uploading file (webdev private): excavation_new_build.jpg (size: 368374 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/excavation_new_build_64513b2c.jpg
+Uploading file (webdev private): finished_bathroom.jpg (size: 156943 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/finished_bathroom_12496624.jpg
+Uploading file (webdev private): gas_meter_test.jpg (size: 454965 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/gas_meter_test_0bb96844.jpg
+Uploading file (webdev private): gas_pipe_wall.jpg (size: 251985 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/gas_pipe_wall_3421d980.jpg
+Uploading file (webdev private): gas_tools_site.jpg (size: 436860 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/gas_tools_site_e9f512b4.jpg
+Uploading file (webdev private): heritage_pipe_repair.jpg (size: 425751 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/heritage_pipe_repair_b52cbe34.jpg
+Uploading file (webdev private): hero_vehicle_tools.jpg (size: 408050 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/hero_vehicle_tools_ecfe0156.jpg
+Uploading file (webdev private): hot_water_plant_room.jpg (size: 310571 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/hot_water_plant_room_a78a6433.jpg
+Uploading file (webdev private): logo.jpg (size: 19227 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/logo_ac5f80fa.jpg
+Uploading file (webdev private): roof_copper_pipework.jpg (size: 172810 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/roof_copper_pipework_d1e2b5b9.jpg
+Uploading file (webdev private): stormwater_drainage.jpg (size: 553119 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/stormwater_drainage_e13e162b.jpg
+Uploading file (webdev private): team_vehicle_trust.jpg (size: 449691 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/team_vehicle_trust_4d608dd1.jpg
+Uploading file (webdev private): under_slab_pipework.jpg (size: 467311 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/under_slab_pipework_fbb0f781.jpg
+
+========== Upload Summary ==========
+[SUCCESS] cctv_drain_inspection.jpg -> /manus-storage/cctv_drain_inspection_32f6ee3d.jpg
+[SUCCESS] commercial_plant_pipework.jpg -> /manus-storage/commercial_plant_pipework_07334ac4.jpg
+[SUCCESS] complex_pipework.jpg -> /manus-storage/complex_pipework_af4ab774.jpg
+[SUCCESS] excavation_new_build.jpg -> /manus-storage/excavation_new_build_64513b2c.jpg
+[SUCCESS] finished_bathroom.jpg -> /manus-storage/finished_bathroom_12496624.jpg
+[SUCCESS] gas_meter_test.jpg -> /manus-storage/gas_meter_test_0bb96844.jpg
+[SUCCESS] gas_pipe_wall.jpg -> /manus-storage/gas_pipe_wall_3421d980.jpg
+[SUCCESS] gas_tools_site.jpg -> /manus-storage/gas_tools_site_e9f512b4.jpg
+[SUCCESS] heritage_pipe_repair.jpg -> /manus-storage/heritage_pipe_repair_b52cbe34.jpg
+[SUCCESS] hero_vehicle_tools.jpg -> /manus-storage/hero_vehicle_tools_ecfe0156.jpg
+[SUCCESS] hot_water_plant_room.jpg -> /manus-storage/hot_water_plant_room_a78a6433.jpg
+[SUCCESS] logo.jpg -> /manus-storage/logo_ac5f80fa.jpg
+[SUCCESS] roof_copper_pipework.jpg -> /manus-storage/roof_copper_pipework_d1e2b5b9.jpg
+[SUCCESS] stormwater_drainage.jpg -> /manus-storage/stormwater_drainage_e13e162b.jpg
+[SUCCESS] team_vehicle_trust.jpg -> /manus-storage/team_vehicle_trust_4d608dd1.jpg
+[SUCCESS] under_slab_pipework.jpg -> /manus-storage/under_slab_pipework_fbb0f781.jpg
+=====================================
+Total: 16, Success: 16, Failed: 0

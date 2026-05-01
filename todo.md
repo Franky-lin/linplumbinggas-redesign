@@ -1,0 +1,22 @@
+# Lin Plumbing & Gas 重设计待办
+
+- [ ] 等待用户上传“Manus专用”文件夹中的真实素材；不得使用 AI 生成图片作为新版网站图片。
+- [ ] 将已生成的 AI 视觉资产从新版实施方案中排除，仅作为废弃参考，不写入网站代码。
+- [ ] 网站服务范围以 Sydney / 悉尼地区为核心表达。
+- [ ] 在首页、服务区和移动端固定联系区突出 24/7 Emergency Plumbing & Gas Service。
+- [ ] 网站内容采用中英双语：英文优先用于 SEO 与澳洲本地客户，中文辅助服务华人客户。
+- [ ] 保留并强化现有公开信息：电话 0430 731 989、邮箱 FRANKY@LINPLUMBINGGAS.COM、LIC NO: 459684C、ABN: 92 670 077 102。
+- [ ] 构建本地 SEO 页面结构：Home、Services、Gas Services、Emergency Plumbing、Hot Water、Blocked Drains、Service Areas、Contact、Terms。
+- [ ] 联系路径包含一键电话、报价表单样式、邮箱、服务区域说明和紧急服务提示。
+- [ ] 若用户暂时未提供 Logo 或照片，先使用非图片型设计占位区块或明确标注“待替换真实照片”，避免使用假照片。
+
+- [ ] 检查当前可访问文件系统中是否存在桌面“Manus专用”文件夹，并清点可用于网站的真实照片、Logo、视频或文档素材。
+- [ ] 如找到素材，将可用图片复制到 `/home/ubuntu/webdev-static-assets/` 并上传为网站可用的持久资源链接。
+
+- [ ] 用户已上传 `/home/ubuntu/upload/pasted_file_8IjNKJ_Manus专用`，需要清点该路径中的真实素材并选择适合网站首屏、服务区、案例区和页脚品牌区的图片。
+
+- [ ] 已收到真实图片素材：98.jpg（Logo）、97.jpeg（人员与车辆）、91.jpg（工具车）、89.jpeg（浴室完工图）、90.jpeg 与 103.jpg（燃气表/燃气管）、92.jpeg（燃气工具现场）、96.jpeg（热水或设备间）、99.jpeg（管道摄像/排水检查）、102.jpeg（地下排水管）、93.jpeg、94.jpeg、95.jpeg、100.jpeg、101.jpeg、105.jpeg（施工与管道工程）。
+- [ ] 严格遵守用户要求：不得再次用图片查看工具打开这些附件；根据用户在对话中展示的图片内容进行甄别和归类。
+- [ ] 新网站所有图片必须来自这些真实上传素材或用户后续补充素材；不得使用 AI 生成图片、图库假图或 Unsplash 图片。
+- [ ] 对 97.jpeg 中人物面部已模糊的照片谨慎使用，可作为“真实团队/车辆”信任素材；避免放大人物脸部，优先突出车辆和设备。
+- [ ] 优先选择 91.jpg 或 97.jpeg 作为首屏真实服务场景，98.jpg 作为 Logo，89.jpeg 作为完工质量案例，90/103/92/100/105 作为 gas service，99/102/94/95/93 作为 drainage/plumbing construction service。

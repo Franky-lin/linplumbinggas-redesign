@@ -44,8 +44,8 @@ const copy = {
     langButton: "中文",
     langHint: "Switch to Chinese",
     heroBadge: "24/7 Emergency · Licensed Sydney Plumbing & Gas",
-    heroTitle: "Plumbing & Gas Work, Done Properly Across Sydney",
-    heroLead: "Call Lin Plumbing & Gas for emergency leaks, gas fitting, blocked drains, hot water, pipework installation and maintenance across Sydney.",
+    heroTitle: "Sydney Plumber & Gas Fitter for Urgent Plumbing, Drains and Hot Water",
+    heroLead: "Call Lin Plumbing & Gas for emergency leaks, gas fitting, blocked drains, drain cleaning, hot water repairs, pipework installation and maintenance across Sydney.",
     heroPanelTitle: "Fast contact matters in an emergency.",
     heroPanelText: "For urgent leaks, gas issues or blocked drains, calling is the quickest way to start.",
     trust: [
@@ -55,8 +55,8 @@ const copy = {
       { title: "Clear service", detail: "Practical advice before work starts", icon: CheckCircle2 },
     ],
     servicesEyebrow: "Services",
-    servicesTitle: "Plumbing & Gas Services",
-    servicesCopy: "Clear service categories help customers find the right help quickly across emergency plumbing, gas fitting, blocked drains, hot water and pipework jobs.",
+    servicesTitle: "Sydney Plumbing, Gas, Drainage & Hot Water Services",
+    servicesCopy: "Clear service categories help customers find the right help quickly across emergency plumbing, gas fitting, blocked drains, drain cleaning, hot water repairs and pipework jobs.",
     services: [
       { icon: Wrench, title: "General Plumbing", text: "Leak repairs, pipework, bathroom plumbing, maintenance and practical troubleshooting for Sydney homes and businesses.", image: REAL_PHOTOS.finishedBathroom },
       { icon: Flame, title: "Gas Fitting & Repairs", text: "Gas fitting, gas repairs, meter-side checks and compliance-minded work by a licensed local trade team.", image: REAL_PHOTOS.gasMeterTest },
@@ -79,8 +79,16 @@ const copy = {
     projectLabels: ["New build excavation", "Pipe repair work", "Roof copper pipework", "Complex pipework"],
     areasEyebrow: "Service Areas",
     areasTitle: "Sydney-wide Service Areas",
-    areasCopy: "The website currently uses Sydney-wide wording for customer clarity. Priority suburb pages can be added once target service areas are confirmed.",
-    areaTags: ["Emergency plumbing", "Gas fitting", "Blocked drains", "Hot water"],
+    areasCopy: "Sydney-wide support for homes, shops, restaurants, strata properties and builders, with priority Chinese and English service coverage across established Sydney suburbs.",
+    areaTags: ["Emergency plumbing", "Gas fitting", "Blocked drains", "Hot water", "Drain cleaning", "Leak repairs", "Pipework installation", "Sydney Chinese service"],
+    seoEyebrow: "Local Search Services",
+    seoTitle: "What Customers Search For When They Need a Sydney Plumber",
+    seoCopy: "For urgent problems, customers often search by the exact issue: blocked drains, drain cleaning, leaking taps, burst pipes, hot water repairs, gas fitting or emergency plumber near them. This page keeps those service terms clear while still focusing on practical, licensed trade work.",
+    seoPoints: [
+      { title: "Blocked drains and drain cleaning", text: "CCTV pipe inspections, stormwater issues and blocked drain diagnosis for residential and commercial sites." },
+      { title: "Hot water repairs and plumbing maintenance", text: "Support for hot water systems, leaking fixtures, pipework connections and scheduled maintenance." },
+      { title: "Gas fitting and gas repairs", text: "Gas meter, gas pipework and compliance-minded service for Sydney customers." },
+    ],
     termsEyebrow: "Terms",
     termsTitle: "Terms and Conditions of Plumbing Services",
     termsIntro: "These service terms are carried across from the original website so important business conditions remain available to customers.",
@@ -115,9 +123,9 @@ const copy = {
     quote: "获取报价",
     langButton: "English",
     langHint: "切换到英文",
-    heroBadge: "24/7 紧急服务 · 悉尼持牌水管与燃气服务",
-    heroTitle: "悉尼水管与燃气服务",
-    heroLead: "施工认真，响应及时。Lin Plumbing & Gas 为悉尼客户提供紧急漏水、燃气安装维修、排水堵塞、热水系统、管道安装与日常维护服务。",
+    heroBadge: "24/7 紧急服务 · 悉尼水工 · 持牌水管工与煤气工",
+    heroTitle: "悉尼水工｜悉尼水管工与持牌煤气工",
+    heroLead: "Lin Plumbing & Gas 为悉尼客户提供悉尼水工、悉尼水管工、持牌煤气工、紧急漏水维修、通渠、下水道疏通、热水器维修、燃气安装维修、管道安装与日常维护服务。",
     heroPanelTitle: "紧急情况，联系速度很重要。",
     heroPanelText: "遇到漏水、燃气问题或排水堵塞时，建议优先电话联系，便于更快确认情况。",
     trust: [
@@ -127,32 +135,40 @@ const copy = {
       { title: "沟通清晰", detail: "施工前先说明处理方式", icon: CheckCircle2 },
     ],
     servicesEyebrow: "服务项目",
-    servicesTitle: "水管与燃气服务",
-    servicesCopy: "清晰的服务分类可以帮助客户快速找到合适服务，覆盖紧急水管、燃气、堵塞排水、热水系统和管道工程。",
+    servicesTitle: "悉尼水管工、煤气工、通渠与热水器维修",
+    servicesCopy: "清晰的服务分类可以帮助客户快速找到合适服务，覆盖悉尼水工、紧急水管维修、煤气工、通渠、下水道疏通、热水器维修和管道工程。",
     services: [
-      { icon: Wrench, title: "日常水管维修", text: "处理漏水、管道、浴室水管、维护与现场排查，适用于悉尼住宅与商业物业。", image: REAL_PHOTOS.finishedBathroom },
-      { icon: Flame, title: "燃气安装与维修", text: "提供燃气安装、维修、燃气表相关检查及合规导向施工。", image: REAL_PHOTOS.gasMeterTest },
-      { icon: Droplets, title: "堵塞排水处理", text: "处理排水堵塞、雨水管问题，并可通过 CCTV 管道检测辅助判断。", image: REAL_PHOTOS.cctvDrainInspection },
-      { icon: Gauge, title: "热水系统", text: "支持热水系统、设备间管路连接、维护与现场服务协调。", image: REAL_PHOTOS.hotWaterPlantRoom },
+      { icon: Wrench, title: "悉尼水管工｜漏水维修", text: "处理漏水、水管爆裂、马桶、水龙头、浴室水管、维护与现场排查，适用于悉尼住宅与商业物业。", image: REAL_PHOTOS.finishedBathroom },
+      { icon: Flame, title: "持牌煤气工｜LPG/GAS", text: "提供燃气安装、煤气维修、燃气表相关检查、LPG/GAS 连接与合规导向施工。", image: REAL_PHOTOS.gasMeterTest },
+      { icon: Droplets, title: "通渠｜下水道疏通", text: "处理下水道堵塞、排水堵塞、雨水管问题，并可通过 CCTV 管道检测辅助判断。", image: REAL_PHOTOS.cctvDrainInspection },
+      { icon: Gauge, title: "热水器维修与安装", text: "支持热水系统、热水器维修、设备间管路连接、维护与现场服务协调。", image: REAL_PHOTOS.hotWaterPlantRoom },
       { icon: HardHat, title: "新建与翻修管道", text: "为新建、翻修、地下管线和 rough-in 阶段提供水管施工支持。", image: REAL_PHOTOS.underSlabPipework },
       { icon: Building2, title: "商业与复杂管道", text: "处理复杂明管、屋顶管线、设备间和商业维护场景。", image: REAL_PHOTOS.commercialPlantPipework },
     ],
     gasEyebrow: "燃气服务",
-    gasTitle: "燃气安装、维修与合规导向施工",
-    gasCopy: "燃气相关服务属于重点业务，页面展示燃气表、工具和管线，让客户更直观了解可处理的现场类型。",
+    gasTitle: "悉尼煤气工：燃气安装、煤气维修与合规导向施工",
+    gasCopy: "燃气相关服务属于重点业务，覆盖持牌煤气工、燃气安装、煤气维修、LPG/GAS 连接、燃气表相关检查和管线施工。页面展示燃气表、工具和管线，让客户更直观了解可处理的现场类型。",
     emergencyTitle: "24/7 紧急响应",
     emergencyCopy: "紧急漏水、燃气或排水问题，请优先电话联系。",
     drainsEyebrow: "排水堵塞",
-    drainsTitle: "堵塞排水与 CCTV 管道检查",
-    drainsCopy: "堵塞排水需要准确判断，而不是猜测。CCTV 检测与雨水管照片展示了排水和管道问题常用的现场工具。",
+    drainsTitle: "悉尼通渠、下水道疏通与 CCTV 管道检查",
+    drainsCopy: "下水道堵塞、排水堵塞和雨水管问题需要准确判断，而不是猜测。CCTV 检测与雨水管照片展示了悉尼通渠、下水道疏通和管道问题常用的现场工具。",
     projectsEyebrow: "施工案例",
     projectsTitle: "近期水管与燃气工程",
     projectsCopy: "案例覆盖燃气、排水、新建、维修、屋顶管线与复杂管道场景。",
     projectLabels: ["新建开挖", "管道维修", "屋顶铜管", "复杂管道"],
     areasEyebrow: "服务区域",
-    areasTitle: "服务悉尼各区",
-    areasCopy: "目前网站以 Sydney-wide 覆盖范围进行说明。确认重点服务区域后，可以继续增加具体城区页面。",
-    areaTags: ["紧急水管", "燃气服务", "堵塞排水", "热水系统"],
+    areasTitle: "服务悉尼华人社区与各区客户",
+    areasCopy: "面向悉尼各区住宅、商铺、餐馆、物业与建筑客户，中文和英文均可沟通。重点覆盖 Eastwood、Chatswood、Hurstville、Burwood、Ryde、Epping、Parramatta、Strathfield、Bankstown、Ashfield、Auburn、Carlingford 等常见华人社区与周边区域。",
+    areaTags: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "热水器维修", "漏水维修", "LPG/GAS 连接", "Eastwood", "Chatswood", "Hurstville", "Burwood"],
+    seoEyebrow: "中文搜索服务",
+    seoTitle: "客户搜索悉尼水工时，通常真正需要什么？",
+    seoCopy: "许多客户不会先搜索公司名，而是直接搜索问题本身，例如悉尼水工、悉尼水管工、通渠、下水道疏通、热水器维修、漏水维修、煤气工或 LPG/GAS 连接。本页面保留这些高意图关键词，同时以清晰的施工范围和电话入口帮助客户快速判断是否适合联系。",
+    seoPoints: [
+      { title: "通渠与下水道疏通", text: "针对下水慢、排水堵塞、雨水管问题和疑似管道内部堵点，可结合 CCTV 管道检测进行判断。" },
+      { title: "热水器维修与漏水维修", text: "覆盖热水系统、设备间管路、水龙头、马桶、浴室水管、水管爆裂和日常维护等常见需求。" },
+      { title: "持牌煤气工与 LPG/GAS 连接", text: "面向悉尼住宅、商铺和餐馆客户，提供燃气安装、煤气维修、燃气表和管线相关服务说明。" },
+    ],
     termsEyebrow: "服务条款",
     termsTitle: "Terms and Conditions of Plumbing Services",
     termsIntro: "以下服务条款沿用原网站内容，确保重要业务条件继续保留并可供客户查看。",
@@ -280,9 +296,10 @@ export default function Home() {
     name: BUSINESS.name,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
-    areaServed: "Sydney, NSW, Australia",
+    areaServed: ["Sydney, NSW, Australia", "Eastwood", "Chatswood", "Hurstville", "Burwood", "Ryde", "Epping", "Parramatta", "Strathfield"],
     openingHours: "Mo-Su 00:00-23:59",
-    description: "Licensed plumbing and gas services across Sydney, including 24/7 emergency response, gas fitting, blocked drains, hot water and pipework. English and Chinese service available.",
+    serviceType: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "热水器维修", "漏水维修", "Gas fitting", "Blocked drains", "Hot water repairs"],
+    description: "Licensed plumbing and gas services across Sydney, including 24/7 emergency response, gas fitting, blocked drains, drain cleaning, hot water repairs and pipework. English and Chinese service available. 中文服务包括悉尼水工、悉尼水管工、持牌煤气工、通渠、下水道疏通、热水器维修和漏水维修。",
   };
 
   return (
@@ -370,7 +387,9 @@ export default function Home() {
 
         <section id="projects" className="scroll-mt-32 bg-[#173557] py-24 text-white"><div className="container"><div className="max-w-3xl"><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.projectsEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.projectsTitle}</h2><p className="mt-5 text-lg leading-8 text-white/72">{t.projectsCopy}</p></div><div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{projectImages.map((src, index) => <figure key={src} className="group relative h-80 overflow-hidden bg-[#071526]"><img src={src} alt={t.projectLabels[index]} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071526] to-transparent p-5"><p className="font-display text-2xl font-bold">{t.projectLabels[index]}</p></figcaption></figure>)}</div></div></section>
 
-        <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center"><img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas service vehicle" className="h-[520px] w-full object-cover shadow-2xl" /><div><SectionHeading eyebrow={t.areasEyebrow} title={t.areasTitle} copy={t.areasCopy} /><div className="mt-8 grid gap-3 sm:grid-cols-2">{t.areaTags.map((tag) => <p key={tag} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold">{tag}</p>)}</div></div></div></section>
+        <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center"><img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas service vehicle" className="h-[520px] w-full object-cover shadow-2xl" /><div><SectionHeading eyebrow={t.areasEyebrow} title={t.areasTitle} copy={t.areasCopy} /><div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{t.areaTags.map((tag) => <p key={tag} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold">{tag}</p>)}</div></div></div></section>
+
+        <section className="bg-[#faf8f5] py-24"><div className="container"><div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">{t.seoEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">{t.seoTitle}</h2><p className="mt-6 text-lg leading-8 text-[#526476]">{t.seoCopy}</p></div><div className="grid gap-4 md:grid-cols-3">{t.seoPoints.map((point) => <article key={point.title} className="trade-card border-t-4 border-[#f5a623] bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{point.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{point.text}</p></article>)}</div></div></div></section>
 
         <section id="contact" className="scroll-mt-32 bg-[#102941] py-24 text-white"><div className="container grid gap-10 lg:grid-cols-[0.85fr_1.15fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.contactEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.contactTitle}</h2><div className="mt-8 space-y-4 text-lg"><a href={BUSINESS.phoneHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Phone className="h-5 w-5" /> {BUSINESS.phone}</a><a href={BUSINESS.emailHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Mail className="h-5 w-5" /> {BUSINESS.email}</a><p className="flex items-center gap-3"><MapPin className="h-5 w-5" /> {BUSINESS.serviceArea}</p><p>{BUSINESS.license} · {BUSINESS.abn}</p></div></div><form action={BUSINESS.emailHref} method="post" encType="text/plain" className="trade-card bg-[#faf8f5] p-6 text-[#173557]"><div className="grid gap-4 sm:grid-cols-2"><label className="font-bold">{t.form.name}<input name="name" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.namePlaceholder} /></label><label className="font-bold">{t.form.phone}<input name="phone" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.phonePlaceholder} /></label></div><label className="mt-4 block font-bold">{t.form.service}<input name="service" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.servicePlaceholder} /></label><label className="mt-4 block font-bold">{t.form.message}<textarea name="message" rows={5} className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.messagePlaceholder} /></label><p className="mt-4 text-sm text-[#637083]">{t.form.note}</p><Button type="submit" className="mt-5 h-13 w-full rounded-none bg-[#f5a623] text-base font-extrabold text-[#142f4d] hover:bg-[#ffc14d]">{t.form.submit}</Button></form></div></section>
       </main>

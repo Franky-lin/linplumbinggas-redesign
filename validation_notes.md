@@ -32,3 +32,10 @@ Build validation also succeeded with `pnpm run build`. The only build output not
 ## Terms 与 Logo 融合最终验证
 
 已将原网站 Terms & Conditions 迁移到新版首页的 Terms 区，并在顶部导航与页脚加入入口。透明反白 Logo 已替换原白底 Logo，在深色导航中不再出现白色图片块。生产构建 `pnpm run build` 成功；预览中 `#terms` 锚点跳转已加入滚动偏移，标题不会再被粘性导航遮挡。
+
+
+## 页面精简与 Terms 菜单化验证
+
+本轮已将服务区图片卡片改为更简洁的图标式服务卡，减少重复照片在同一首页中的出现频率。案例图库从六张精简为四张，保留新建开挖、管道维修、屋顶铜管与复杂管道这类代表性不同场景，页面整体更短、更干净。
+
+Terms & Conditions 已从首页主体浏览流程中移除。顶部导航中的 Terms 按钮现在会打开可选弹层，页脚 Terms & Conditions 入口也会打开同一弹层，客户只有主动点击时才会查看条款，不会在正常浏览首页时被强制看到。生产构建 `pnpm run build` 已通过，预览页面中 Terms 弹层可正常打开。

@@ -21,6 +21,7 @@ import {
   Phone,
   ShieldCheck,
   Wrench,
+  X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BUSINESS, REAL_PHOTOS } from "@/lib/linAssets";
@@ -75,7 +76,7 @@ const copy = {
     projectsEyebrow: "Work Gallery",
     projectsTitle: "Recent Plumbing & Gas Jobs",
     projectsCopy: "A practical gallery covering gas, drainage, new build, repair, roof and complex pipework.",
-    projectLabels: ["Gas pipework", "Stormwater drainage", "New build excavation", "Pipe repair work", "Roof copper pipework", "Complex pipework"],
+    projectLabels: ["New build excavation", "Pipe repair work", "Roof copper pipework", "Complex pipework"],
     areasEyebrow: "Service Areas",
     areasTitle: "Sydney-wide Service Areas",
     areasCopy: "The website currently uses Sydney-wide wording for customer clarity. Priority suburb pages can be added once target service areas are confirmed.",
@@ -147,7 +148,7 @@ const copy = {
     projectsEyebrow: "施工案例",
     projectsTitle: "近期水管与燃气工程",
     projectsCopy: "案例覆盖燃气、排水、新建、维修、屋顶管线与复杂管道场景。",
-    projectLabels: ["燃气管线", "雨水排水", "新建开挖", "管道维修", "屋顶铜管", "复杂管道"],
+    projectLabels: ["新建开挖", "管道维修", "屋顶铜管", "复杂管道"],
     areasEyebrow: "服务区域",
     areasTitle: "服务悉尼各区",
     areasCopy: "目前网站以 Sydney-wide 覆盖范围进行说明。确认重点服务区域后，可以继续增加具体城区页面。",
@@ -175,8 +176,6 @@ const copy = {
 } as const;
 
 const projectImages = [
-  REAL_PHOTOS.gasPipeWall,
-  REAL_PHOTOS.stormwaterDrainage,
   REAL_PHOTOS.excavationNewBuild,
   REAL_PHOTOS.heritagePipeRepair,
   REAL_PHOTOS.roofCopperPipework,
@@ -272,6 +271,7 @@ function CallButtons({ dark = false, t }: { dark?: boolean; t: (typeof copy)[Lan
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>("en");
+  const [showTerms, setShowTerms] = useState(false);
   const t = copy[lang];
 
   const schema = {
@@ -299,7 +299,7 @@ export default function Home() {
         <nav className="container flex items-center justify-between gap-5 py-4">
           <BrandLockup />
           <div className="hidden items-center gap-6 lg:flex">
-            {t.nav.map(([href, label]) => <a key={href} href={href} className="text-sm font-semibold text-white/78 transition hover:text-[#f5a623]">{label}</a>)}
+            {t.nav.map(([href, label]) => href === "#terms" ? <button key={href} type="button" onClick={() => setShowTerms(true)} className="text-sm font-semibold text-white/78 transition hover:text-[#f5a623]">{label}</button> : <a key={href} href={href} className="text-sm font-semibold text-white/78 transition hover:text-[#f5a623]">{label}</a>)}
           </div>
           <div className="flex items-center gap-3">
             <Button type="button" variant="outline" aria-label={t.langHint} onClick={() => setLang(lang === "en" ? "zh" : "en")} className="rounded-none border-white/30 bg-white/5 px-3 font-bold text-white hover:bg-white hover:text-[#173557]">
@@ -351,7 +351,7 @@ export default function Home() {
             <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {t.services.map((service, index) => {
                 const Icon = service.icon;
-                return <article key={service.title} className="group trade-card overflow-hidden bg-white"><div className="relative h-64 overflow-hidden bg-[#173557]"><img src={service.image} alt={service.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-[#071526]/82 via-[#071526]/25 to-transparent" /><div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center bg-[#f5a623] text-[#142f4d]"><Icon className="h-6 w-6" /></div><span className="absolute right-4 top-4 bg-white/92 px-3 py-1 font-display text-sm font-bold text-[#173557]">0{index + 1}</span></div><div className="p-6"><h3 className="font-display text-3xl font-bold leading-none text-[#173557]">{service.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{service.text}</p></div></article>;
+                return <article key={service.title} className="trade-card bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"><div className="flex items-start justify-between gap-5"><div className="flex h-14 w-14 shrink-0 items-center justify-center bg-[#f5a623] text-[#142f4d]"><Icon className="h-7 w-7" /></div><span className="font-display text-sm font-bold text-[#b86f3c]">0{index + 1}</span></div><h3 className="mt-7 font-display text-3xl font-bold leading-none text-[#173557]">{service.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{service.text}</p></article>;
               })}
             </div>
           </div>
@@ -372,12 +372,32 @@ export default function Home() {
 
         <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center"><img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas service vehicle" className="h-[520px] w-full object-cover shadow-2xl" /><div><SectionHeading eyebrow={t.areasEyebrow} title={t.areasTitle} copy={t.areasCopy} /><div className="mt-8 grid gap-3 sm:grid-cols-2">{t.areaTags.map((tag) => <p key={tag} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold">{tag}</p>)}</div></div></div></section>
 
-        <section id="terms" className="scroll-mt-32 bg-[#faf8f5] py-24"><div className="container"><SectionHeading eyebrow={t.termsEyebrow} title={t.termsTitle} copy={t.termsIntro} /><div className="mt-12 grid gap-5 lg:grid-cols-2">{terms.map((term) => <article key={term.title} className="trade-card bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{term.title}</h3><div className="mt-4 space-y-3 text-sm leading-7 text-[#526476]">{term.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></article>)}</div></div></section>
-
         <section id="contact" className="scroll-mt-32 bg-[#102941] py-24 text-white"><div className="container grid gap-10 lg:grid-cols-[0.85fr_1.15fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.contactEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.contactTitle}</h2><div className="mt-8 space-y-4 text-lg"><a href={BUSINESS.phoneHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Phone className="h-5 w-5" /> {BUSINESS.phone}</a><a href={BUSINESS.emailHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Mail className="h-5 w-5" /> {BUSINESS.email}</a><p className="flex items-center gap-3"><MapPin className="h-5 w-5" /> {BUSINESS.serviceArea}</p><p>{BUSINESS.license} · {BUSINESS.abn}</p></div></div><form action={BUSINESS.emailHref} method="post" encType="text/plain" className="trade-card bg-[#faf8f5] p-6 text-[#173557]"><div className="grid gap-4 sm:grid-cols-2"><label className="font-bold">{t.form.name}<input name="name" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.namePlaceholder} /></label><label className="font-bold">{t.form.phone}<input name="phone" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.phonePlaceholder} /></label></div><label className="mt-4 block font-bold">{t.form.service}<input name="service" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.servicePlaceholder} /></label><label className="mt-4 block font-bold">{t.form.message}<textarea name="message" rows={5} className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.messagePlaceholder} /></label><p className="mt-4 text-sm text-[#637083]">{t.form.note}</p><Button type="submit" className="mt-5 h-13 w-full rounded-none bg-[#f5a623] text-base font-extrabold text-[#142f4d] hover:bg-[#ffc14d]">{t.form.submit}</Button></form></div></section>
       </main>
 
-      <footer className="bg-[#071526] pb-24 pt-12 text-white md:pb-12"><div className="container flex flex-col justify-between gap-8 md:flex-row"><div><BrandLockup compact /><p className="mt-4 max-w-xl text-white/65">{t.footerLine}</p></div><div className="text-white/75"><p>{BUSINESS.license}</p><p>{BUSINESS.abn}</p><p><a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a></p><p><a href={BUSINESS.emailHref}>{BUSINESS.email}</a></p><p className="mt-3"><a href="#terms" className="font-bold text-[#f5a623] hover:text-white">Terms & Conditions</a></p></div></div></footer>
+      <footer className="bg-[#071526] pb-24 pt-12 text-white md:pb-12"><div className="container flex flex-col justify-between gap-8 md:flex-row"><div><BrandLockup compact /><p className="mt-4 max-w-xl text-white/65">{t.footerLine}</p></div><div className="text-white/75"><p>{BUSINESS.license}</p><p>{BUSINESS.abn}</p><p><a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a></p><p><a href={BUSINESS.emailHref}>{BUSINESS.email}</a></p><p className="mt-3"><button type="button" onClick={() => setShowTerms(true)} className="font-bold text-[#f5a623] hover:text-white">Terms & Conditions</button></p></div></div></footer>
+
+      {showTerms && (
+        <div className="fixed inset-0 z-[80] bg-[#071526]/80 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+          <div className="mx-auto flex max-h-[90vh] max-w-5xl flex-col overflow-hidden bg-[#faf8f5] shadow-2xl">
+            <div className="flex items-start justify-between gap-6 border-b border-[#173557]/10 bg-[#173557] p-6 text-white">
+              <div>
+                <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.termsEyebrow}</p>
+                <h2 id="terms-title" className="mt-2 font-display text-3xl font-bold leading-none md:text-5xl">{t.termsTitle}</h2>
+                <p className="mt-3 max-w-3xl text-sm leading-6 text-white/70">{t.termsIntro}</p>
+              </div>
+              <button type="button" onClick={() => setShowTerms(false)} className="flex h-11 w-11 shrink-0 items-center justify-center border border-white/25 text-white transition hover:bg-white hover:text-[#173557]" aria-label="Close Terms and Conditions">
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <div className="overflow-y-auto p-6">
+              <div className="grid gap-5 lg:grid-cols-2">
+                {terms.map((term) => <article key={term.title} className="trade-card bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{term.title}</h3><div className="mt-4 space-y-3 text-sm leading-7 text-[#526476]">{term.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></article>)}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#f5a623]/50 bg-[#f5a623] p-3 text-[#142f4d] shadow-2xl md:hidden"><a href={BUSINESS.phoneHref} className="flex items-center justify-center gap-2 font-display text-xl font-bold"><Phone className="h-5 w-5" /> {t.mobileCall} {BUSINESS.phone}</a></div>
     </div>

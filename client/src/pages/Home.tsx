@@ -35,6 +35,7 @@ const copy = {
       ["#services", "Services"],
       ["#gas", "Gas"],
       ["#projects", "Work"],
+      ["#terms", "Terms"],
       ["#contact", "Contact"],
     ],
     callNow: "Call Now",
@@ -79,6 +80,9 @@ const copy = {
     areasTitle: "Sydney-wide Service Areas",
     areasCopy: "The website currently uses Sydney-wide wording for customer clarity. Priority suburb pages can be added once target service areas are confirmed.",
     areaTags: ["Emergency plumbing", "Gas fitting", "Blocked drains", "Hot water"],
+    termsEyebrow: "Terms",
+    termsTitle: "Terms and Conditions of Plumbing Services",
+    termsIntro: "These service terms are carried across from the original website so important business conditions remain available to customers.",
     contactEyebrow: "Contact",
     contactTitle: "Call, Email or Request a Quote",
     form: {
@@ -103,6 +107,7 @@ const copy = {
       ["#services", "服务"],
       ["#gas", "燃气"],
       ["#projects", "案例"],
+      ["#terms", "条款"],
       ["#contact", "联系"],
     ],
     callNow: "立即致电",
@@ -147,6 +152,9 @@ const copy = {
     areasTitle: "服务悉尼各区",
     areasCopy: "目前网站以 Sydney-wide 覆盖范围进行说明。确认重点服务区域后，可以继续增加具体城区页面。",
     areaTags: ["紧急水管", "燃气服务", "堵塞排水", "热水系统"],
+    termsEyebrow: "服务条款",
+    termsTitle: "Terms and Conditions of Plumbing Services",
+    termsIntro: "以下服务条款沿用原网站内容，确保重要业务条件继续保留并可供客户查看。",
     contactEyebrow: "联系",
     contactTitle: "电话、邮件或发送询价信息",
     form: {
@@ -175,16 +183,66 @@ const projectImages = [
   REAL_PHOTOS.complexPipework,
 ];
 
+const terms = [
+  {
+    title: "1. Definitions & Technical Standards",
+    body: [
+      '"The Company": Refers to Lin Plumbing & Gas and its authorized licensed technicians.',
+      '"The Client": Refers to the individual, owner, or legal entity requesting services or named on the invoice.',
+      '"Compliance": All work shall be strictly performed in accordance with current Australian Standards, including but not limited to AS/NZS 3500 (Plumbing and Drainage) and AS/NZS 5601.1 (Gas Installations).',
+      '"Defect": Refers specifically to a failure in workmanship that explicitly contravenes the technical requirements of the applicable AS/NZS standards. Minor aesthetic variations within the allowable tolerances of these standards do not constitute a defect.',
+    ],
+  },
+  {
+    title: "2. Retention of Title (Ownership of Materials)",
+    body: [
+      "Title and legal ownership of all Materials and equipment supplied by the Company shall remain with the Company until the Invoice is paid in full.",
+      "Until such payment is cleared, the Client holds the Materials as a bailee only.",
+      "In the event of a payment default, the Company reserves the absolute right to enter the premises (where access is legally permitted) to reclaim and remove any Materials, fixtures, or appliances supplied by us, even if already partially installed.",
+    ],
+  },
+  {
+    title: "3. Warranty and Mandatory Inspection Procedure",
+    body: [
+      "12-Month Limited Warranty: The Company provides a 12-month warranty on labor (Workmanship) from the date of completion.",
+      "Notification Requirement: If a potential issue arises, the Client must notify the Company in writing immediately.",
+      "First Right of Inspection: The Client must grant the Company the first opportunity to inspect and, if necessary, rectify the Work before engaging any third-party contractors. Any unauthorized interference with the Company’s Work by the Client or a third party will void this warranty immediately.",
+      "Inspection Outcomes: If the issue is determined to be a result of our workmanship, it will be repaired at no cost. If the issue is not related to our workmanship (e.g., external damage, product fault, or failure of the Client’s pre-existing infrastructure), a new quote will be provided.",
+      "Call-out Fees: A standard call-out fee applies to all site visits, including warranty inspections. This fee will only be waived if the fault is proven to be a direct result of our workmanship.",
+    ],
+  },
+  {
+    title: "4. Payment Terms, Late Fees, and Interest",
+    body: [
+      "Due Date: All invoices are strictly due within 7 days of issuance.",
+      "Administrative Late Fee: A fixed administrative fee of $25.00 will be applied to any invoice not paid by the due date to cover processing costs.",
+      "Interest: Overdue balances will accrue interest at a rate of 10% per annum, calculated daily from the due date until the debt is cleared.",
+      "Recovery Costs: The Client is liable for all legal and debt collection costs incurred by the Company in recovering unpaid funds.",
+    ],
+  },
+  {
+    title: "5. Limitation of Liability",
+    body: [
+      "The Company is not liable for the failure of pre-existing, aged, or substandard pipes/fixtures (e.g., corroded galvanized lines) encountered during the Work.",
+      "Product warranties (e.g., hot water units) are provided by the manufacturer. Our liability is limited to the labor within our specific scope of work.",
+    ],
+  },
+  {
+    title: "6. Final Interpretation",
+    body: [
+      "The Company reserves the sole and absolute right to interpret all terms, conditions, technical specifications, and the scope of work within this agreement.",
+      "In any technical dispute, the Company’s professional determination—based on licensed expertise and interpretation of the relevant AS/NZS standards—shall be final and binding upon the Client.",
+    ],
+  },
+];
+
 function BrandLockup({ compact = false }: { compact?: boolean }) {
   return (
     <a href="#top" className="flex items-center gap-4" aria-label="Lin Plumbing and Gas home">
-      <span className={`${compact ? "h-14 w-44" : "h-16 w-56 md:h-20 md:w-72"} flex shrink-0 items-center justify-center overflow-hidden border border-white/20 bg-white p-2 shadow-xl`}>
-        <img src={REAL_PHOTOS.logo} alt="Lin Plumbing & Gas" className="h-full w-full object-contain" />
+      <span className={`${compact ? "h-12 w-52" : "h-16 w-64 md:h-20 md:w-80"} flex shrink-0 items-center justify-start overflow-visible`}>
+        <img src={REAL_PHOTOS.logo} alt="Lin Plumbing & Gas Pty Ltd" className="h-full w-full object-contain object-left drop-shadow-[0_6px_18px_rgba(0,0,0,0.24)]" />
       </span>
-      <span className="hidden min-w-0 xl:block">
-        <span className="block font-display text-2xl font-bold leading-none tracking-tight">LIN PLUMBING & GAS</span>
-        <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.22em] text-white/70">Sydney · Licensed Trade</span>
-      </span>
+      <span className="sr-only">LIN PLUMBING & GAS PTY LTD · Sydney Licensed Trade</span>
     </a>
   );
 }
@@ -287,7 +345,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services" className="engineering-paper py-24">
+        <section id="services" className="engineering-paper scroll-mt-32 py-24">
           <div className="container">
             <SectionHeading eyebrow={t.servicesEyebrow} title={t.servicesTitle} copy={t.servicesCopy} />
             <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -299,7 +357,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="gas" className="bg-[#102941] py-24 text-white">
+        <section id="gas" className="scroll-mt-32 bg-[#102941] py-24 text-white">
           <div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div className="grid gap-4 sm:grid-cols-2"><img src={REAL_PHOTOS.gasToolsSite} alt="Gas service tools" className="h-72 w-full object-cover" /><img src={REAL_PHOTOS.gasMeterTest} alt="Gas meter work" className="h-72 w-full object-cover sm:mt-12" /><img src={REAL_PHOTOS.gasPipeWall} alt="Gas pipework" className="h-56 w-full object-cover sm:col-span-2" /></div>
             <div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.gasEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.gasTitle}</h2><p className="mt-6 text-lg leading-8 text-white/78">{t.gasCopy}</p><div className="mt-8"><CallButtons dark t={t} /></div></div>
@@ -310,14 +368,16 @@ export default function Home() {
 
         <section className="py-24"><div className="container grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center"><div><SectionHeading eyebrow={t.drainsEyebrow} title={t.drainsTitle} copy={t.drainsCopy} /><div className="mt-8"><CallButtons t={t} /></div></div><div className="grid gap-4 sm:grid-cols-2"><img src={REAL_PHOTOS.cctvDrainInspection} alt="CCTV pipe inspection equipment" className="h-80 w-full object-cover" /><img src={REAL_PHOTOS.stormwaterDrainage} alt="Stormwater drainage" className="h-80 w-full object-cover sm:mt-10" /></div></div></section>
 
-        <section id="projects" className="bg-[#173557] py-24 text-white"><div className="container"><div className="max-w-3xl"><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.projectsEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.projectsTitle}</h2><p className="mt-5 text-lg leading-8 text-white/72">{t.projectsCopy}</p></div><div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{projectImages.map((src, index) => <figure key={src} className="group relative h-80 overflow-hidden bg-[#071526]"><img src={src} alt={t.projectLabels[index]} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071526] to-transparent p-5"><p className="font-display text-2xl font-bold">{t.projectLabels[index]}</p></figcaption></figure>)}</div></div></section>
+        <section id="projects" className="scroll-mt-32 bg-[#173557] py-24 text-white"><div className="container"><div className="max-w-3xl"><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.projectsEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.projectsTitle}</h2><p className="mt-5 text-lg leading-8 text-white/72">{t.projectsCopy}</p></div><div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{projectImages.map((src, index) => <figure key={src} className="group relative h-80 overflow-hidden bg-[#071526]"><img src={src} alt={t.projectLabels[index]} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071526] to-transparent p-5"><p className="font-display text-2xl font-bold">{t.projectLabels[index]}</p></figcaption></figure>)}</div></div></section>
 
         <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center"><img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas service vehicle" className="h-[520px] w-full object-cover shadow-2xl" /><div><SectionHeading eyebrow={t.areasEyebrow} title={t.areasTitle} copy={t.areasCopy} /><div className="mt-8 grid gap-3 sm:grid-cols-2">{t.areaTags.map((tag) => <p key={tag} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold">{tag}</p>)}</div></div></div></section>
 
-        <section id="contact" className="bg-[#102941] py-24 text-white"><div className="container grid gap-10 lg:grid-cols-[0.85fr_1.15fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.contactEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.contactTitle}</h2><div className="mt-8 space-y-4 text-lg"><a href={BUSINESS.phoneHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Phone className="h-5 w-5" /> {BUSINESS.phone}</a><a href={BUSINESS.emailHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Mail className="h-5 w-5" /> {BUSINESS.email}</a><p className="flex items-center gap-3"><MapPin className="h-5 w-5" /> {BUSINESS.serviceArea}</p><p>{BUSINESS.license} · {BUSINESS.abn}</p></div></div><form action={BUSINESS.emailHref} method="post" encType="text/plain" className="trade-card bg-[#faf8f5] p-6 text-[#173557]"><div className="grid gap-4 sm:grid-cols-2"><label className="font-bold">{t.form.name}<input name="name" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.namePlaceholder} /></label><label className="font-bold">{t.form.phone}<input name="phone" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.phonePlaceholder} /></label></div><label className="mt-4 block font-bold">{t.form.service}<input name="service" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.servicePlaceholder} /></label><label className="mt-4 block font-bold">{t.form.message}<textarea name="message" rows={5} className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.messagePlaceholder} /></label><p className="mt-4 text-sm text-[#637083]">{t.form.note}</p><Button type="submit" className="mt-5 h-13 w-full rounded-none bg-[#f5a623] text-base font-extrabold text-[#142f4d] hover:bg-[#ffc14d]">{t.form.submit}</Button></form></div></section>
+        <section id="terms" className="scroll-mt-32 bg-[#faf8f5] py-24"><div className="container"><SectionHeading eyebrow={t.termsEyebrow} title={t.termsTitle} copy={t.termsIntro} /><div className="mt-12 grid gap-5 lg:grid-cols-2">{terms.map((term) => <article key={term.title} className="trade-card bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{term.title}</h3><div className="mt-4 space-y-3 text-sm leading-7 text-[#526476]">{term.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></article>)}</div></div></section>
+
+        <section id="contact" className="scroll-mt-32 bg-[#102941] py-24 text-white"><div className="container grid gap-10 lg:grid-cols-[0.85fr_1.15fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.contactEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.contactTitle}</h2><div className="mt-8 space-y-4 text-lg"><a href={BUSINESS.phoneHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Phone className="h-5 w-5" /> {BUSINESS.phone}</a><a href={BUSINESS.emailHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Mail className="h-5 w-5" /> {BUSINESS.email}</a><p className="flex items-center gap-3"><MapPin className="h-5 w-5" /> {BUSINESS.serviceArea}</p><p>{BUSINESS.license} · {BUSINESS.abn}</p></div></div><form action={BUSINESS.emailHref} method="post" encType="text/plain" className="trade-card bg-[#faf8f5] p-6 text-[#173557]"><div className="grid gap-4 sm:grid-cols-2"><label className="font-bold">{t.form.name}<input name="name" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.namePlaceholder} /></label><label className="font-bold">{t.form.phone}<input name="phone" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.phonePlaceholder} /></label></div><label className="mt-4 block font-bold">{t.form.service}<input name="service" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.servicePlaceholder} /></label><label className="mt-4 block font-bold">{t.form.message}<textarea name="message" rows={5} className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.messagePlaceholder} /></label><p className="mt-4 text-sm text-[#637083]">{t.form.note}</p><Button type="submit" className="mt-5 h-13 w-full rounded-none bg-[#f5a623] text-base font-extrabold text-[#142f4d] hover:bg-[#ffc14d]">{t.form.submit}</Button></form></div></section>
       </main>
 
-      <footer className="bg-[#071526] pb-24 pt-12 text-white md:pb-12"><div className="container flex flex-col justify-between gap-8 md:flex-row"><div><BrandLockup compact /><p className="mt-4 max-w-xl text-white/65">{t.footerLine}</p></div><div className="text-white/75"><p>{BUSINESS.license}</p><p>{BUSINESS.abn}</p><p><a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a></p><p><a href={BUSINESS.emailHref}>{BUSINESS.email}</a></p></div></div></footer>
+      <footer className="bg-[#071526] pb-24 pt-12 text-white md:pb-12"><div className="container flex flex-col justify-between gap-8 md:flex-row"><div><BrandLockup compact /><p className="mt-4 max-w-xl text-white/65">{t.footerLine}</p></div><div className="text-white/75"><p>{BUSINESS.license}</p><p>{BUSINESS.abn}</p><p><a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a></p><p><a href={BUSINESS.emailHref}>{BUSINESS.email}</a></p><p className="mt-3"><a href="#terms" className="font-bold text-[#f5a623] hover:text-white">Terms & Conditions</a></p></div></div></footer>
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#f5a623]/50 bg-[#f5a623] p-3 text-[#142f4d] shadow-2xl md:hidden"><a href={BUSINESS.phoneHref} className="flex items-center justify-center gap-2 font-display text-xl font-bold"><Phone className="h-5 w-5" /> {t.mobileCall} {BUSINESS.phone}</a></div>
     </div>

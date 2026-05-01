@@ -24,7 +24,7 @@ export const REAL_PHOTOS = {
   heritagePipeRepair: "/manus-storage/heritage_pipe_repair_b52cbe34.jpg",
   heroVehicleTools: "/manus-storage/hero_vehicle_tools_ecfe0156.jpg",
   hotWaterPlantRoom: "/manus-storage/hot_water_plant_room_a78a6433.jpg",
-  logo: "/manus-storage/logo_cropped_5add9294.png",
+  logo: "/manus-storage/logo_white_transparent_c489426c.png",
   roofCopperPipework: "/manus-storage/roof_copper_pipework_d1e2b5b9.jpg",
   stormwaterDrainage: "/manus-storage/stormwater_drainage_e13e162b.jpg",
   teamVehicleTrust: "/manus-storage/team_vehicle_trust_4d608dd1.jpg",

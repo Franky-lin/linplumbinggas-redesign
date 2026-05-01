@@ -109,3 +109,27 @@
 - [ ] 在不夸大、不堆砌关键词的前提下，进一步优化 Lin Plumbing & Gas 首页中文 SEO 文案、服务语义、FAQ 或结构化数据。
 - [ ] 运行生产构建验证并保存新的检查点。
 - [ ] 向用户说明 SEO 无法保证第一页排名，但可通过站内 SEO、本地商家资料、外链与持续内容提高机会。
+
+## Stormwater 与 Pump System 服务补充
+
+- [ ] 在不新增图片素材的情况下，把 stormwater system 和 pump system 加入首页服务项目。
+- [ ] 同步更新英文文案，包括 service cards、service area tags、SEO section、FAQ 与 meta description。
+- [ ] 同步更新中文文案，包括雨水排水系统、泵系统/排污泵/增压泵等服务表达。
+- [ ] 更新 JSON-LD 结构化数据的 serviceType，增强搜索引擎对新增服务范围的理解。
+- [ ] 运行生产构建验证，并保存新的 checkpoint 给用户预览。
+
+## 住宅热水器图片与新增服务补充
+
+- [ ] 使用用户新上传的住宅 Rinnai hotflo plus 热水器照片替换 Hot Water Systems / 热水器服务卡片原商业热水系统照片。
+- [ ] 将原 commercial hot water system 图片保留给商业、复杂管道或设备间相关场景，避免住宅客户误解服务重点。
+- [ ] 将 stormwater system 和 pump system 加入英文服务项目、服务标签、FAQ 与 SEO 文案。
+- [ ] 将“雨水排水系统”“泵系统/排污泵/增压泵”等中文表达加入中文服务项目、服务标签、FAQ 与 SEO 文案。
+- [ ] 上传新图片到网站静态资源存储，使用返回的持久 URL，不把图片直接放进项目目录。
+- [ ] 更新 JSON-LD serviceType 并运行生产构建验证，然后保存新的 checkpoint。
+
+## 客户口吻修正与新增服务完成项
+
+- [ ] 将页面中“客户搜索什么”“给搜索引擎 clearer context”等偏内部 SEO 说明的文字改成直接面向客户的服务说明。
+- [ ] 将中文“中文搜索服务 / 客户搜索悉尼水工时...”版块改为“悉尼水管与排水服务说明”或类似客户友好标题。
+- [ ] 将英文 “Search FAQ / Sydney Plumbing Questions Customers Ask Before Calling” 改为自然的 “Common Plumbing Questions” 或客户服务问答表达。
+- [ ] 同步完成 stormwater system、pump system 与住宅热水器安装图片的服务展示更新。

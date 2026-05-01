@@ -24,6 +24,7 @@ export const REAL_PHOTOS = {
   heritagePipeRepair: "/manus-storage/heritage_pipe_repair_b52cbe34.jpg",
   heroVehicleTools: "/manus-storage/hero_vehicle_tools_ecfe0156.jpg",
   hotWaterPlantRoom: "/manus-storage/hot_water_plant_room_a78a6433.jpg",
+  residentialHotWaterInstall: "/manus-storage/residential-rinnai-hot-water-install_e25c0ada.jpeg",
   logo: "/manus-storage/logo_white_transparent_c489426c.png",
   roofCopperPipework: "/manus-storage/roof_copper_pipework_d1e2b5b9.jpg",
   stormwaterDrainage: "/manus-storage/stormwater_drainage_e13e162b.jpg",

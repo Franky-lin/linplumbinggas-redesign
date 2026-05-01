@@ -45,7 +45,7 @@ const copy = {
     langHint: "Switch to Chinese",
     heroBadge: "24/7 Emergency · Licensed Sydney Plumbing & Gas",
     heroTitle: "Sydney Plumber & Gas Fitter for Urgent Plumbing, Drains and Hot Water",
-    heroLead: "Call Lin Plumbing & Gas for emergency leaks, gas fitting, blocked drains, drain cleaning, hot water repairs, pipework installation and maintenance across Sydney.",
+    heroLead: "Call Lin Plumbing & Gas for emergency leaks, gas fitting, blocked drains, stormwater systems, pump systems, drain cleaning, hot water repairs, pipework installation and maintenance across Sydney.",
     heroPanelTitle: "Fast contact matters in an emergency.",
     heroPanelText: "For urgent leaks, gas issues or blocked drains, calling is the quickest way to start.",
     trust: [
@@ -56,12 +56,14 @@ const copy = {
     ],
     servicesEyebrow: "Services",
     servicesTitle: "Sydney Plumbing, Gas, Drainage & Hot Water Services",
-    servicesCopy: "Clear service categories help customers find the right help quickly across emergency plumbing, gas fitting, blocked drains, drain cleaning, hot water repairs and pipework jobs.",
+    servicesCopy: "Clear service categories help customers find the right help quickly across emergency plumbing, gas fitting, blocked drains, stormwater systems, pump systems, hot water repairs and pipework jobs.",
     services: [
       { icon: Wrench, title: "General Plumbing", text: "Leak repairs, pipework, bathroom plumbing, maintenance and practical troubleshooting for Sydney homes and businesses.", image: REAL_PHOTOS.finishedBathroom },
       { icon: Flame, title: "Gas Fitting & Repairs", text: "Gas fitting, gas repairs, meter-side checks and compliance-minded work by a licensed local trade team.", image: REAL_PHOTOS.gasMeterTest },
-      { icon: Droplets, title: "Blocked Drains", text: "Blocked drains, stormwater issues and CCTV pipe inspections supported by on-site diagnostic equipment.", image: REAL_PHOTOS.cctvDrainInspection },
-      { icon: Gauge, title: "Hot Water Systems", text: "Support for hot water plant rooms, pipework connections, maintenance and service coordination.", image: REAL_PHOTOS.hotWaterPlantRoom },
+      { icon: Droplets, title: "Blocked Drains", text: "Blocked drains, drain cleaning and CCTV pipe inspections supported by on-site diagnostic equipment.", image: REAL_PHOTOS.cctvDrainInspection },
+      { icon: Gauge, title: "Hot Water Systems", text: "Residential hot water installation, repairs, replacement advice, pipework connections and maintenance support.", image: REAL_PHOTOS.residentialHotWaterInstall },
+      { icon: Droplets, title: "Stormwater Systems", text: "Stormwater drainage, surface water issues, outdoor pipework and practical drainage solutions for Sydney properties.", image: REAL_PHOTOS.stormwaterDrainage },
+      { icon: Gauge, title: "Pump Systems", text: "Pump system pipework, basic fault checks, replacement coordination and practical support for water movement needs.", image: REAL_PHOTOS.hotWaterPlantRoom },
       { icon: HardHat, title: "New Builds & Renovations", text: "Under-slab pipework, renovation plumbing and rough-in support for builders and property owners.", image: REAL_PHOTOS.underSlabPipework },
       { icon: Building2, title: "Commercial Pipework", text: "Complex exposed pipework, roof runs and plant-room plumbing for commercial and maintenance contexts.", image: REAL_PHOTOS.commercialPlantPipework },
     ],
@@ -71,8 +73,8 @@ const copy = {
     emergencyTitle: "24/7 Emergency Response",
     emergencyCopy: "For urgent leaks, gas or drain problems, please call first.",
     drainsEyebrow: "Blocked Drains",
-    drainsTitle: "Blocked Drains & CCTV Pipe Inspections",
-    drainsCopy: "Blocked drains need clear diagnosis, not guesswork. CCTV inspection and stormwater photos show the practical tools used for drain and pipe issues.",
+    drainsTitle: "Blocked Drains, Stormwater Systems & Pump Support",
+    drainsCopy: "Blocked drains, stormwater systems and pump-related issues need clear diagnosis, not guesswork. CCTV inspection, drainage photos and practical site checks help identify the right next step.",
     projectsEyebrow: "Work Gallery",
     projectsTitle: "Recent Plumbing & Gas Jobs",
     projectsCopy: "A practical gallery covering gas, drainage, new build, repair, roof and complex pipework.",
@@ -80,22 +82,24 @@ const copy = {
     areasEyebrow: "Service Areas",
     areasTitle: "Sydney-wide Service Areas",
     areasCopy: "Sydney-wide support for homes, shops, restaurants, strata properties and builders, with priority Chinese and English service coverage across established Sydney suburbs.",
-    areaTags: ["Emergency plumbing", "Gas fitting", "Blocked drains", "Hot water", "Drain cleaning", "Leak repairs", "Pipework installation"],
-    seoEyebrow: "Local Search Services",
-    seoTitle: "What Customers Search For When They Need a Sydney Plumber",
-    seoCopy: "For urgent problems, customers often search by the exact issue: blocked drains, drain cleaning, leaking taps, burst pipes, hot water repairs, gas fitting or emergency plumber near them. This page keeps those service terms clear while still focusing on practical, licensed trade work.",
+    areaTags: ["Emergency plumbing", "Gas fitting", "Blocked drains", "Stormwater systems", "Pump systems", "Hot water", "Drain cleaning", "Leak repairs", "Pipework installation"],
+    seoEyebrow: "Service Guide",
+    seoTitle: "Plumbing, Drainage, Gas and Pump Services for Sydney Properties",
+    seoCopy: "Whether the issue is inside the home, outside in the drainage line, or connected to gas and hot water, Lin Plumbing & Gas keeps the service scope clear so customers can contact the right trade support quickly.",
     seoPoints: [
-      { title: "Blocked drains and drain cleaning", text: "CCTV pipe inspections, stormwater issues and blocked drain diagnosis for residential and commercial sites." },
-      { title: "Hot water repairs and plumbing maintenance", text: "Support for hot water systems, leaking fixtures, pipework connections and scheduled maintenance." },
+      { title: "Blocked drains and stormwater", text: "CCTV pipe inspections, drain cleaning, stormwater drainage and blocked drain diagnosis for residential and commercial sites." },
+      { title: "Hot water repairs and installation", text: "Support for residential hot water systems, leaking fixtures, pipework connections, replacement advice and scheduled maintenance." },
+      { title: "Pump systems and pipework", text: "Practical support for pump system pipework, basic fault checks, replacement coordination and water movement issues." },
       { title: "Gas fitting and gas repairs", text: "Gas meter, gas pipework and compliance-minded service for Sydney customers." },
     ],
-    faqEyebrow: "Search FAQ",
-    faqTitle: "Sydney Plumbing Questions Customers Ask Before Calling",
-    faqCopy: "Short, plain-language answers help customers understand when to call a licensed plumber or gas fitter, while giving search engines clearer context about the services Lin Plumbing & Gas provides.",
+    faqEyebrow: "Common Questions",
+    faqTitle: "Common Plumbing Questions Before Booking",
+    faqCopy: "These answers help Sydney customers understand whether Lin Plumbing & Gas may be suitable for their plumbing, drainage, gas, hot water, stormwater or pump system issue.",
     faqs: [
       { question: "Do you provide emergency plumber service across Sydney?", answer: "Yes. Lin Plumbing & Gas presents 24/7 emergency plumbing and gas response for urgent leaks, blocked drains, hot water issues and gas concerns across Sydney. Calling is recommended for urgent jobs." },
-      { question: "Can you help with blocked drains and CCTV pipe inspections?", answer: "Yes. The service coverage includes blocked drains, drain cleaning, stormwater issues and CCTV pipe inspection support to help identify likely pipe or drainage problems on site." },
-      { question: "Do you handle gas fitting and hot water repairs?", answer: "Yes. The business highlights gas fitting, gas repairs, LPG/GAS connections, gas meter-related work and hot water system repair or maintenance support." },
+      { question: "Can you help with blocked drains, stormwater and CCTV pipe inspections?", answer: "Yes. The service coverage includes blocked drains, drain cleaning, stormwater systems and CCTV pipe inspection support to help identify likely pipe or drainage problems on site." },
+      { question: "Do you handle pump systems?", answer: "Yes. Pump system support can be discussed for pump pipework, basic fault checks, replacement coordination and related water movement issues. Calling first is recommended so the site context can be confirmed." },
+      { question: "Do you handle gas fitting and hot water repairs?", answer: "Yes. The business highlights gas fitting, gas repairs, LPG/GAS connections, gas meter-related work and residential hot water system installation, repair or maintenance support." },
     ],
     termsEyebrow: "Terms",
     termsTitle: "Terms and Conditions of Plumbing Services",
@@ -133,7 +137,7 @@ const copy = {
     langHint: "切换到英文",
     heroBadge: "24/7 紧急服务 · 悉尼水工 · 持牌水管工与煤气工",
     heroTitle: "悉尼水工｜悉尼水管工与持牌煤气工",
-    heroLead: "Lin Plumbing & Gas 为悉尼客户提供悉尼水工、悉尼水管工、持牌煤气工、紧急漏水维修、通渠、下水道疏通、热水器维修、燃气安装维修、管道安装与日常维护服务。",
+    heroLead: "Lin Plumbing & Gas 为悉尼客户提供悉尼水工、悉尼水管工、持牌煤气工、紧急漏水维修、通渠、下水道疏通、雨水排水系统、泵系统、热水器安装维修、燃气安装维修、管道安装与日常维护服务。",
     heroPanelTitle: "紧急情况，联系速度很重要。",
     heroPanelText: "遇到漏水、燃气问题或排水堵塞时，建议优先电话联系，便于更快确认情况。",
     trust: [
@@ -143,13 +147,15 @@ const copy = {
       { title: "沟通清晰", detail: "施工前先说明处理方式", icon: CheckCircle2 },
     ],
     servicesEyebrow: "服务项目",
-    servicesTitle: "悉尼水管工、煤气工、通渠与热水器维修",
-    servicesCopy: "清晰的服务分类可以帮助客户快速找到合适服务，覆盖悉尼水工、紧急水管维修、煤气工、通渠、下水道疏通、热水器维修和管道工程。",
+    servicesTitle: "悉尼水管工、煤气工、排水系统、泵系统与热水器维修",
+    servicesCopy: "清晰的服务分类可以帮助客户快速找到合适服务，覆盖悉尼水工、紧急水管维修、煤气工、通渠、下水道疏通、雨水排水系统、泵系统、热水器安装维修和管道工程。",
     services: [
       { icon: Wrench, title: "悉尼水管工｜漏水维修", text: "处理漏水、水管爆裂、马桶、水龙头、浴室水管、维护与现场排查，适用于悉尼住宅与商业物业。", image: REAL_PHOTOS.finishedBathroom },
       { icon: Flame, title: "持牌煤气工｜LPG/GAS", text: "提供燃气安装、煤气维修、燃气表相关检查、LPG/GAS 连接与合规导向施工。", image: REAL_PHOTOS.gasMeterTest },
-      { icon: Droplets, title: "通渠｜下水道疏通", text: "处理下水道堵塞、排水堵塞、雨水管问题，并可通过 CCTV 管道检测辅助判断。", image: REAL_PHOTOS.cctvDrainInspection },
-      { icon: Gauge, title: "热水器维修与安装", text: "支持热水系统、热水器维修、设备间管路连接、维护与现场服务协调。", image: REAL_PHOTOS.hotWaterPlantRoom },
+      { icon: Droplets, title: "通渠｜下水道疏通", text: "处理下水道堵塞、排水堵塞，并可通过 CCTV 管道检测辅助判断。", image: REAL_PHOTOS.cctvDrainInspection },
+      { icon: Gauge, title: "热水器安装与维修", text: "支持住宅热水器安装、热水器维修、更换建议、管路连接、维护与现场服务协调。", image: REAL_PHOTOS.residentialHotWaterInstall },
+      { icon: Droplets, title: "雨水排水系统", text: "处理 stormwater system、雨水管、地面排水、户外排水管路及相关排水问题。", image: REAL_PHOTOS.stormwaterDrainage },
+      { icon: Gauge, title: "泵系统｜Pump System", text: "支持泵系统管路、基础故障检查、更换协调、排污泵或增压泵相关咨询。", image: REAL_PHOTOS.hotWaterPlantRoom },
       { icon: HardHat, title: "新建与翻修管道", text: "为新建、翻修、地下管线和 rough-in 阶段提供水管施工支持。", image: REAL_PHOTOS.underSlabPipework },
       { icon: Building2, title: "商业与复杂管道", text: "处理复杂明管、屋顶管线、设备间和商业维护场景。", image: REAL_PHOTOS.commercialPlantPipework },
     ],
@@ -159,8 +165,8 @@ const copy = {
     emergencyTitle: "24/7 紧急响应",
     emergencyCopy: "紧急漏水、燃气或排水问题，请优先电话联系。",
     drainsEyebrow: "排水堵塞",
-    drainsTitle: "悉尼通渠、下水道疏通与 CCTV 管道检查",
-    drainsCopy: "下水道堵塞、排水堵塞和雨水管问题需要准确判断，而不是猜测。CCTV 检测与雨水管照片展示了悉尼通渠、下水道疏通和管道问题常用的现场工具。",
+    drainsTitle: "悉尼通渠、雨水排水系统、泵系统与 CCTV 管道检查",
+    drainsCopy: "下水道堵塞、排水堵塞、stormwater system 和 pump system 问题需要准确判断，而不是猜测。CCTV 检测、排水照片和现场检查可以帮助判断下一步处理方式。",
     projectsEyebrow: "施工案例",
     projectsTitle: "近期水管与燃气工程",
     projectsCopy: "案例覆盖燃气、排水、新建、维修、屋顶管线与复杂管道场景。",
@@ -168,22 +174,24 @@ const copy = {
     areasEyebrow: "服务区域",
     areasTitle: "服务悉尼华人社区与各区客户",
     areasCopy: "面向悉尼各区住宅、商铺、餐馆、物业与建筑客户，中文和英文均可沟通。重点覆盖 Eastwood、Chatswood、Hurstville、Burwood、Ryde、Epping、Parramatta、Strathfield、Bankstown、Ashfield、Auburn、Carlingford 等常见华人社区与周边区域。",
-    areaTags: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "热水器维修", "漏水维修", "LPG/GAS 连接", "Eastwood", "Chatswood", "Hurstville", "Burwood"],
-    seoEyebrow: "中文搜索服务",
-    seoTitle: "客户搜索悉尼水工时，通常真正需要什么？",
-    seoCopy: "许多客户不会先搜索公司名，而是直接搜索问题本身，例如悉尼水工、悉尼水管工、通渠、下水道疏通、热水器维修、漏水维修、煤气工或 LPG/GAS 连接。本页面保留这些高意图关键词，同时以清晰的施工范围和电话入口帮助客户快速判断是否适合联系。",
+    areaTags: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "雨水排水系统", "泵系统", "热水器安装", "热水器维修", "漏水维修", "LPG/GAS 连接", "Eastwood", "Chatswood", "Hurstville", "Burwood"],
+    seoEyebrow: "服务说明",
+    seoTitle: "悉尼住宅与商业物业的水管、排水、燃气和泵系统服务",
+    seoCopy: "无论问题发生在室内水管、户外排水、热水器、燃气管线，还是雨水排水系统与泵系统，Lin Plumbing & Gas 都会尽量先了解现场情况，再说明适合的处理方向。",
     seoPoints: [
-      { title: "通渠与下水道疏通", text: "针对下水慢、排水堵塞、雨水管问题和疑似管道内部堵点，可结合 CCTV 管道检测进行判断。" },
-      { title: "热水器维修与漏水维修", text: "覆盖热水系统、设备间管路、水龙头、马桶、浴室水管、水管爆裂和日常维护等常见需求。" },
+      { title: "通渠、下水道疏通与雨水排水", text: "针对下水慢、排水堵塞、雨水管问题和疑似管道内部堵点，可结合 CCTV 管道检测进行判断。" },
+      { title: "热水器安装、维修与漏水维修", text: "覆盖住宅热水器、设备间管路、水龙头、马桶、浴室水管、水管爆裂和日常维护等常见需求。" },
+      { title: "泵系统与相关管路", text: "可咨询 pump system、排污泵、增压泵、泵系统管路、基础故障检查和更换协调等相关问题。" },
       { title: "持牌煤气工与 LPG/GAS 连接", text: "面向悉尼住宅、商铺和餐馆客户，提供燃气安装、煤气维修、燃气表和管线相关服务说明。" },
     ],
-    faqEyebrow: "常见搜索问题",
-    faqTitle: "悉尼华人客户搜索水工前常问的问题",
-    faqCopy: "用自然中文回答高意图问题，比单纯重复关键词更稳妥。以下内容覆盖悉尼水工、悉尼水管工、通渠、热水器维修、漏水维修、持牌煤气工与 LPG/GAS 连接等真实需求。",
+    faqEyebrow: "常见问题",
+    faqTitle: "预约水管、排水或燃气服务前的常见问题",
+    faqCopy: "以下内容帮助客户判断 Lin Plumbing & Gas 是否适合处理当前的水管、排水、燃气、热水器、雨水排水系统或泵系统问题。",
     faqs: [
       { question: "你们是悉尼水工或悉尼水管工吗？", answer: "Lin Plumbing & Gas 面向悉尼住宅、商铺、餐馆、物业和建筑客户提供持牌水管与燃气服务，中文和英文均可沟通。紧急情况建议直接电话联系。" },
-      { question: "可以处理通渠、下水道疏通和排水堵塞吗？", answer: "可以。服务内容包括通渠、下水道疏通、排水堵塞、雨水管问题和 CCTV 管道检测辅助判断，适用于住宅与商业现场。" },
-      { question: "热水器维修、漏水维修和水管爆裂可以联系吗？", answer: "可以。页面服务范围覆盖热水器维修、热水系统、漏水维修、水龙头、马桶、浴室水管、水管爆裂和日常维护等常见问题。" },
+      { question: "可以处理通渠、下水道疏通、雨水排水系统和排水堵塞吗？", answer: "可以。服务内容包括通渠、下水道疏通、排水堵塞、stormwater system、雨水管问题和 CCTV 管道检测辅助判断，适用于住宅与商业现场。" },
+      { question: "可以处理 pump system、排污泵或增压泵相关问题吗？", answer: "可以先联系咨询。服务范围可包括泵系统管路、基础故障检查、更换协调、排污泵或增压泵相关问题。建议电话说明现场情况，方便判断是否适合安排。" },
+      { question: "热水器安装、热水器维修、漏水维修和水管爆裂可以联系吗？", answer: "可以。页面服务范围覆盖住宅热水器安装、热水器维修、热水系统、漏水维修、水龙头、马桶、浴室水管、水管爆裂和日常维护等常见问题。" },
       { question: "你们提供持牌煤气工、燃气安装或 LPG/GAS 连接服务吗？", answer: "可以联系咨询。网站展示的燃气服务包括持牌煤气工、燃气安装、煤气维修、LPG/GAS 连接、燃气表和相关管线施工说明。" },
       { question: "服务哪些悉尼华人区？", answer: "网站重点说明覆盖 Eastwood、Chatswood、Hurstville、Burwood、Ryde、Epping、Parramatta、Strathfield、Bankstown、Ashfield、Auburn、Carlingford 以及悉尼周边区域。" },
     ],
@@ -317,8 +325,8 @@ export default function Home() {
     email: BUSINESS.email,
     areaServed: ["Sydney, NSW, Australia", "Eastwood", "Chatswood", "Hurstville", "Burwood", "Ryde", "Epping", "Parramatta", "Strathfield", "Bankstown", "Ashfield", "Auburn", "Carlingford"],
     openingHours: "Mo-Su 00:00-23:59",
-    serviceType: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "热水器维修", "漏水维修", "水管爆裂", "燃气安装", "LPG/GAS 连接", "Gas fitting", "Blocked drains", "Hot water repairs"],
-    description: "Licensed plumbing and gas services across Sydney, including 24/7 emergency response, gas fitting, blocked drains, drain cleaning, hot water repairs and pipework. English and Chinese service available. 中文服务包括悉尼水工、悉尼水管工、持牌煤气工、通渠、下水道疏通、热水器维修、漏水维修、水管爆裂、燃气安装与 LPG/GAS 连接。",
+    serviceType: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "雨水排水系统", "泵系统", "排污泵", "增压泵", "热水器安装", "热水器维修", "漏水维修", "水管爆裂", "燃气安装", "LPG/GAS 连接", "Gas fitting", "Blocked drains", "Stormwater systems", "Pump systems", "Hot water installation", "Hot water repairs"],
+    description: "Licensed plumbing and gas services across Sydney, including 24/7 emergency response, gas fitting, blocked drains, stormwater systems, pump systems, hot water installation, hot water repairs and pipework. English and Chinese service available. 中文服务包括悉尼水工、悉尼水管工、持牌煤气工、通渠、下水道疏通、雨水排水系统、泵系统、热水器安装维修、漏水维修、水管爆裂、燃气安装与 LPG/GAS 连接。",
   };
 
   const faqSchema = {
@@ -401,7 +409,7 @@ export default function Home() {
             <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {t.services.map((service, index) => {
                 const Icon = service.icon;
-                return <article key={service.title} className="trade-card bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"><div className="flex items-start justify-between gap-5"><div className="flex h-14 w-14 shrink-0 items-center justify-center bg-[#f5a623] text-[#142f4d]"><Icon className="h-7 w-7" /></div><span className="font-display text-sm font-bold text-[#b86f3c]">0{index + 1}</span></div><h3 className="mt-7 font-display text-3xl font-bold leading-none text-[#173557]">{service.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{service.text}</p></article>;
+                return <article key={service.title} className="trade-card overflow-hidden bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"><img src={service.image} alt={service.title} className="h-44 w-full object-cover object-center" /><div className="p-6"><div className="flex items-start justify-between gap-5"><div className="flex h-14 w-14 shrink-0 items-center justify-center bg-[#f5a623] text-[#142f4d]"><Icon className="h-7 w-7" /></div><span className="font-display text-sm font-bold text-[#b86f3c]">0{index + 1}</span></div><h3 className="mt-7 font-display text-3xl font-bold leading-none text-[#173557]">{service.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{service.text}</p></div></article>;
               })}
             </div>
           </div>
@@ -422,7 +430,7 @@ export default function Home() {
 
         <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center"><img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas service vehicle" className="h-[520px] w-full object-cover object-center shadow-2xl" /><div><SectionHeading eyebrow={t.areasEyebrow} title={t.areasTitle} copy={t.areasCopy} /><div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{t.areaTags.map((tag) => <p key={tag} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold">{tag}</p>)}</div></div></div></section>
 
-        <section className="bg-[#faf8f5] py-24"><div className="container"><div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">{t.seoEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">{t.seoTitle}</h2><p className="mt-6 text-lg leading-8 text-[#526476]">{t.seoCopy}</p></div><div className="grid gap-4 md:grid-cols-3">{t.seoPoints.map((point) => <article key={point.title} className="trade-card border-t-4 border-[#f5a623] bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{point.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{point.text}</p></article>)}</div></div></div></section>
+        <section className="bg-[#faf8f5] py-24"><div className="container"><div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">{t.seoEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">{t.seoTitle}</h2><p className="mt-6 text-lg leading-8 text-[#526476]">{t.seoCopy}</p></div><div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">{t.seoPoints.map((point) => <article key={point.title} className="trade-card border-t-4 border-[#f5a623] bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{point.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{point.text}</p></article>)}</div></div></div></section>
 
         <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.82fr_1.18fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">{t.faqEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">{t.faqTitle}</h2><p className="mt-6 text-lg leading-8 text-[#526476]">{t.faqCopy}</p></div><div className="space-y-4">{t.faqs.map((faq) => <article key={faq.question} className="trade-card bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{faq.question}</h3><p className="mt-3 text-base leading-7 text-[#526476]">{faq.answer}</p></article>)}</div></div></section>
 

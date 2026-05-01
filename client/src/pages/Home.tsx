@@ -89,6 +89,14 @@ const copy = {
       { title: "Hot water repairs and plumbing maintenance", text: "Support for hot water systems, leaking fixtures, pipework connections and scheduled maintenance." },
       { title: "Gas fitting and gas repairs", text: "Gas meter, gas pipework and compliance-minded service for Sydney customers." },
     ],
+    faqEyebrow: "Search FAQ",
+    faqTitle: "Sydney Plumbing Questions Customers Ask Before Calling",
+    faqCopy: "Short, plain-language answers help customers understand when to call a licensed plumber or gas fitter, while giving search engines clearer context about the services Lin Plumbing & Gas provides.",
+    faqs: [
+      { question: "Do you provide emergency plumber service across Sydney?", answer: "Yes. Lin Plumbing & Gas presents 24/7 emergency plumbing and gas response for urgent leaks, blocked drains, hot water issues and gas concerns across Sydney. Calling is recommended for urgent jobs." },
+      { question: "Can you help with blocked drains and CCTV pipe inspections?", answer: "Yes. The service coverage includes blocked drains, drain cleaning, stormwater issues and CCTV pipe inspection support to help identify likely pipe or drainage problems on site." },
+      { question: "Do you handle gas fitting and hot water repairs?", answer: "Yes. The business highlights gas fitting, gas repairs, LPG/GAS connections, gas meter-related work and hot water system repair or maintenance support." },
+    ],
     termsEyebrow: "Terms",
     termsTitle: "Terms and Conditions of Plumbing Services",
     termsIntro: "These service terms are carried across from the original website so important business conditions remain available to customers.",
@@ -168,6 +176,16 @@ const copy = {
       { title: "通渠与下水道疏通", text: "针对下水慢、排水堵塞、雨水管问题和疑似管道内部堵点，可结合 CCTV 管道检测进行判断。" },
       { title: "热水器维修与漏水维修", text: "覆盖热水系统、设备间管路、水龙头、马桶、浴室水管、水管爆裂和日常维护等常见需求。" },
       { title: "持牌煤气工与 LPG/GAS 连接", text: "面向悉尼住宅、商铺和餐馆客户，提供燃气安装、煤气维修、燃气表和管线相关服务说明。" },
+    ],
+    faqEyebrow: "常见搜索问题",
+    faqTitle: "悉尼华人客户搜索水工前常问的问题",
+    faqCopy: "用自然中文回答高意图问题，比单纯重复关键词更稳妥。以下内容覆盖悉尼水工、悉尼水管工、通渠、热水器维修、漏水维修、持牌煤气工与 LPG/GAS 连接等真实需求。",
+    faqs: [
+      { question: "你们是悉尼水工或悉尼水管工吗？", answer: "Lin Plumbing & Gas 面向悉尼住宅、商铺、餐馆、物业和建筑客户提供持牌水管与燃气服务，中文和英文均可沟通。紧急情况建议直接电话联系。" },
+      { question: "可以处理通渠、下水道疏通和排水堵塞吗？", answer: "可以。服务内容包括通渠、下水道疏通、排水堵塞、雨水管问题和 CCTV 管道检测辅助判断，适用于住宅与商业现场。" },
+      { question: "热水器维修、漏水维修和水管爆裂可以联系吗？", answer: "可以。页面服务范围覆盖热水器维修、热水系统、漏水维修、水龙头、马桶、浴室水管、水管爆裂和日常维护等常见问题。" },
+      { question: "你们提供持牌煤气工、燃气安装或 LPG/GAS 连接服务吗？", answer: "可以联系咨询。网站展示的燃气服务包括持牌煤气工、燃气安装、煤气维修、LPG/GAS 连接、燃气表和相关管线施工说明。" },
+      { question: "服务哪些悉尼华人区？", answer: "网站重点说明覆盖 Eastwood、Chatswood、Hurstville、Burwood、Ryde、Epping、Parramatta、Strathfield、Bankstown、Ashfield、Auburn、Carlingford 以及悉尼周边区域。" },
     ],
     termsEyebrow: "服务条款",
     termsTitle: "Terms and Conditions of Plumbing Services",
@@ -294,17 +312,32 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Plumber",
     name: BUSINESS.name,
+    url: "https://linplumbinggas.com/",
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
-    areaServed: ["Sydney, NSW, Australia", "Eastwood", "Chatswood", "Hurstville", "Burwood", "Ryde", "Epping", "Parramatta", "Strathfield"],
+    areaServed: ["Sydney, NSW, Australia", "Eastwood", "Chatswood", "Hurstville", "Burwood", "Ryde", "Epping", "Parramatta", "Strathfield", "Bankstown", "Ashfield", "Auburn", "Carlingford"],
     openingHours: "Mo-Su 00:00-23:59",
-    serviceType: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "热水器维修", "漏水维修", "Gas fitting", "Blocked drains", "Hot water repairs"],
-    description: "Licensed plumbing and gas services across Sydney, including 24/7 emergency response, gas fitting, blocked drains, drain cleaning, hot water repairs and pipework. English and Chinese service available. 中文服务包括悉尼水工、悉尼水管工、持牌煤气工、通渠、下水道疏通、热水器维修和漏水维修。",
+    serviceType: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "热水器维修", "漏水维修", "水管爆裂", "燃气安装", "LPG/GAS 连接", "Gas fitting", "Blocked drains", "Hot water repairs"],
+    description: "Licensed plumbing and gas services across Sydney, including 24/7 emergency response, gas fitting, blocked drains, drain cleaning, hot water repairs and pipework. English and Chinese service available. 中文服务包括悉尼水工、悉尼水管工、持牌煤气工、通渠、下水道疏通、热水器维修、漏水维修、水管爆裂、燃气安装与 LPG/GAS 连接。",
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: t.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 
   return (
     <div className="min-h-screen bg-[#faf8f5] text-[#173557]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <header className="sticky top-0 z-50 border-b border-white/15 bg-[#173557]/95 text-white backdrop-blur-xl">
         <div className="bg-[#f5a623] text-[#142f4d]">
@@ -390,6 +423,8 @@ export default function Home() {
         <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center"><img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas service vehicle" className="h-[520px] w-full object-cover object-center shadow-2xl" /><div><SectionHeading eyebrow={t.areasEyebrow} title={t.areasTitle} copy={t.areasCopy} /><div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{t.areaTags.map((tag) => <p key={tag} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold">{tag}</p>)}</div></div></div></section>
 
         <section className="bg-[#faf8f5] py-24"><div className="container"><div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">{t.seoEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">{t.seoTitle}</h2><p className="mt-6 text-lg leading-8 text-[#526476]">{t.seoCopy}</p></div><div className="grid gap-4 md:grid-cols-3">{t.seoPoints.map((point) => <article key={point.title} className="trade-card border-t-4 border-[#f5a623] bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{point.title}</h3><p className="mt-4 text-base leading-7 text-[#526476]">{point.text}</p></article>)}</div></div></div></section>
+
+        <section className="engineering-paper py-24"><div className="container grid gap-10 lg:grid-cols-[0.82fr_1.18fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">{t.faqEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">{t.faqTitle}</h2><p className="mt-6 text-lg leading-8 text-[#526476]">{t.faqCopy}</p></div><div className="space-y-4">{t.faqs.map((faq) => <article key={faq.question} className="trade-card bg-white p-6 shadow-sm"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{faq.question}</h3><p className="mt-3 text-base leading-7 text-[#526476]">{faq.answer}</p></article>)}</div></div></section>
 
         <section id="contact" className="scroll-mt-32 bg-[#102941] py-24 text-white"><div className="container grid gap-10 lg:grid-cols-[0.85fr_1.15fr]"><div><p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#f5a623]">{t.contactEyebrow}</p><h2 className="mt-3 font-display text-5xl font-bold leading-none md:text-7xl">{t.contactTitle}</h2><div className="mt-8 space-y-4 text-lg"><a href={BUSINESS.phoneHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Phone className="h-5 w-5" /> {BUSINESS.phone}</a><a href={BUSINESS.emailHref} className="flex items-center gap-3 hover:text-[#f5a623]"><Mail className="h-5 w-5" /> {BUSINESS.email}</a><p className="flex items-center gap-3"><MapPin className="h-5 w-5" /> {BUSINESS.serviceArea}</p><p>{BUSINESS.license} · {BUSINESS.abn}</p></div></div><form action={BUSINESS.emailHref} method="post" encType="text/plain" className="trade-card bg-[#faf8f5] p-6 text-[#173557]"><div className="grid gap-4 sm:grid-cols-2"><label className="font-bold">{t.form.name}<input name="name" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.namePlaceholder} /></label><label className="font-bold">{t.form.phone}<input name="phone" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.phonePlaceholder} /></label></div><label className="mt-4 block font-bold">{t.form.service}<input name="service" className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.servicePlaceholder} /></label><label className="mt-4 block font-bold">{t.form.message}<textarea name="message" rows={5} className="mt-2 w-full border border-[#173557]/20 bg-white p-3 font-normal" placeholder={t.form.messagePlaceholder} /></label><p className="mt-4 text-sm text-[#637083]">{t.form.note}</p><Button type="submit" className="mt-5 h-13 w-full rounded-none bg-[#f5a623] text-base font-extrabold text-[#142f4d] hover:bg-[#ffc14d]">{t.form.submit}</Button></form></div></section>
       </main>

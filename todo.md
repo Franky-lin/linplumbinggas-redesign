@@ -52,3 +52,52 @@
 - [x] 审计当前新网站的 title、meta description、H1/H2、中文内容、robots.txt、sitemap.xml 与服务关键词覆盖。
 - [x] 对比我们当前 SEO 与竞品的优势和不足，形成可执行优化建议。
 - [x] 基于明显 SEO 缺口，完成首页 title/meta、中文 H1/H2、服务关键词、地区覆盖、长尾内容区块与 JSON-LD serviceType 优化。
+
+## 发布与旧站覆盖
+
+- [ ] 确认旧网站当前托管方式：是否在 Manus、cPanel/传统主机、WordPress、Wix/Squarespace、Netlify/Vercel 或其他平台。
+- [ ] 确认旧网站域名 DNS 管理位置：域名注册商、Cloudflare 或托管商 DNS 面板。
+- [ ] 发布新版网站前保留旧站备份，并记录旧站当前 A/CNAME 记录，便于必要时回滚。
+- [ ] 如果使用 Manus 内置托管，先点击当前 checkpoint 的 Publish，再在 Domains 设置中绑定旧域名。
+- [ ] 如果继续使用外部托管，导出静态构建文件或代码，并按目标平台要求上传，同时注意可能存在兼容性差异。
+
+## 旧站迁移与 SEO 获客策略补充
+
+- [ ] 旧网站由淘宝服务商制作并托管，当前可获得旧站后台登录信息，但仍需确认域名 DNS 控制权在哪里。
+- [ ] 优先目标不是简单换页面，而是保留 `linplumbinggas.com` 原域名并提升悉尼本地 SEO 获客能力。
+- [ ] 上线前需要备份旧站内容、截图旧站后台关键设置，并记录当前 DNS A/CNAME 解析，避免迁移后无法回滚。
+- [ ] 建议优先采用 Manus 发布新版网站并绑定原域名；如果不能拿到 DNS 控制权，再考虑让淘宝服务商提供域名解析修改或协助导入静态文件。
+- [ ] 用户截图中包含旧站后台账号信息，上线迁移后应立即修改旧后台密码，避免长期暴露风险。
+
+## Google Domains 域名迁移确认
+
+- [ ] 用户确认域名使用 Google Domains/Google 域名体系管理，优先通过 DNS 指向新版 Manus 网站，而不是继续依赖旧站后台。
+- [ ] 发布新版网站后，在 Manus 的 Domains 面板添加 `linplumbinggas.com` 与 `www.linplumbinggas.com`，并按照系统给出的 A/CNAME 记录到 Google Domains DNS 中配置。
+- [ ] 修改 DNS 前截图保存原有 `@`、`www`、MX、TXT 等记录；只替换网站相关 A/CNAME，不动邮箱相关 MX/TXT 记录，避免影响邮箱。
+- [ ] DNS 生效后检查 `https://linplumbinggas.com` 和 `https://www.linplumbinggas.com` 是否都打开新版网站，并确认电话、邮箱、中文切换与表单正常。
+
+## HTTPS 证书与 Publish 影响
+
+- [ ] 用户旧站曾向淘宝服务商购买 HTTPS 证书，需提醒该证书通常绑定旧托管环境，迁移到新托管后一般不需要继续依赖旧证书。
+- [ ] Publish 新版 Manus 网站本身不会影响旧站；只有在 Google Domains/Squarespace Domains 修改 DNS 指向新站后，旧域名访问内容才会切换。
+- [ ] 使用 Manus 绑定自定义域名后，应等待平台自动签发/启用 HTTPS，再确认 `https://linplumbinggas.com` 与 `https://www.linplumbinggas.com` 均无“不安全”提示。
+- [ ] DNS 切换期间可能出现短暂解析或证书生效延迟，建议在非高峰时间操作并保留旧 DNS 记录截图以便回滚。
+
+## 用户确认开始域名绑定协助
+
+- [ ] 用户已确认希望协助完成 Manus 发布、绑定 `linplumbinggas.com` / `www.linplumbinggas.com`，并指导在 Google Domains 中修改 DNS。
+- [ ] 涉及 Publish、域名绑定、DNS 记录修改、删除旧 A/CNAME 记录等真实上线动作前，需要用户在界面中自行确认或明确授权。
+- [ ] 如 Google Domains 需要登录、双重验证或个人信息输入，应让用户接管浏览器或由用户提供截图，不直接索要敏感登录密码。
+
+## iPhone 操作域名绑定
+
+- [ ] 用户当前使用 iPhone 操作 Manus 发布与自定义域名流程，需要以手机端界面说明如何找到“自定义域名 / Domains”入口。
+- [ ] 如果手机端无法清楚显示 DNS 记录，建议用户横屏、使用浏览器打开 Manus，或改用电脑完成域名和 DNS 设置。
+- [ ] 用户只需先在 Manus 端查看/添加自定义域名并截图 DNS 记录，暂不在 Google Domains 保存任何 DNS 修改。
+
+## 本轮前端修复
+
+- [ ] 检查网站中用户提供的真实图片显示位置与对齐方式，修复裁切、偏移或容器比例导致的不对齐问题。
+- [ ] 从网站界面中移除 “Sydney Chinese service” 选项，避免用户认为该标签不合适或影响品牌表达。
+- [ ] 修改完成后运行构建验证，确认关键词移除和图片布局调整没有造成前端错误。
+- [ ] 保存新的 checkpoint，便于用户继续查看和发布。

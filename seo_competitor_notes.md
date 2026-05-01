@@ -31,3 +31,7 @@
 ## 现有 Lin 网站 SEO 状态
 
 当前 `client/index.html` 的 title 为“Lin Plumbing & Gas Sydney | Licensed Plumbing & Gas Services”，description 只在末尾提到“中英双语服务”。英文定位清晰，但中文关键词不足。当前中文 H1 为“悉尼水管与燃气服务”，尚未直接覆盖“悉尼水工”“悉尼水管工”“煤气工”“高压通渠”“下水道疏通”“热水器维修”等高意图词。Homepage 已经具备双语内容、服务卡片、燃气区块、排水区块、区域区块和联系表单，因此 SEO 改进可以在不改变视觉方向的前提下进行：更新 HTML meta、增强中文 copy、增加 suburb 覆盖与长尾服务关键词。
+
+## 旧站公开首页核对（linplumbinggas.com）
+
+旧站当前可通过 `https://www.linplumbinggas.com/` 访问，页面标题显示为 “Linplumbinggas”。首页内容以英文为主，包含 Drain Cleaning & Repairs、Plumbing Services、Gas Services、Hot Water Repairs & Installs、Kitchen and Bathroom Renovations、Commercial Plumbing、联系电话、邮箱、License 与 ABN。旧站具备基本服务关键词与联系方式，但标题、中文关键词、本地地区词、结构化 SEO 表达和视觉信任度相对较弱。因为旧域名已经在线且可能被 Google 收录，建议优先保留原域名 `linplumbinggas.com`，将新版网站发布后绑定到同一域名，而不是换新域名。

@@ -44,33 +44,33 @@ type ServicePageConfig = {
 export const serviceConfigs = {
   blockedDrains: {
     meta: {
-      title: "悉尼通渠 | 下水道疏通与 CCTV 管道检测 | Lin Plumbing & Gas",
-      description: "Lin Plumbing & Gas 提供悉尼通渠、下水道疏通、排水堵塞、雨水排水系统和 CCTV 管道检测服务。中文沟通，持牌服务，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区。",
+      title: "悉尼通渠 | 排水管维修、屋顶雨水系统改造与 CCTV 管道检测 | Lin Plumbing & Gas",
+      description: "Lin Plumbing & Gas 提供悉尼通渠、排水管维修、下水道疏通、屋顶雨水系统改造、雨水排水系统和 CCTV 管道检测服务。中文沟通，持牌服务，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区。",
       path: "/zh/blocked-drains",
       keywords: ["悉尼通渠", "悉尼下水道疏通", "blocked drains Sydney 中文", "CCTV 管道检测", "Eastwood 通渠", "Chatswood 通渠", "Hurstville 通渠", "不通不收费"],
     },
     eyebrow: "悉尼通渠",
-    h1: "悉尼通渠｜下水道疏通、排水堵塞与 CCTV 管道检测",
-    lead: "厨房、浴室、地漏、马桶或户外雨水排水系统出现下水慢、返水或异味时，需要先判断堵塞位置和原因。Lin Plumbing & Gas 提供中文沟通的通渠、下水道疏通、雨水排水和 CCTV 管道检测说明服务。",
+    h1: "悉尼通渠｜排水管维修、屋顶雨水系统改造与 CCTV 管道检测",
+    lead: "厨房、浴室、地漏、马桶、户外排水或屋顶雨水系统出现下水慢、返水、异味或雨天倒灌时，需要先判断堵塞位置和原因。Lin Plumbing & Gas 提供中文沟通的通渠、排水管维修、下水道疏通、雨水排水和 CCTV 管道检测服务。",
     heroImage: REAL_PHOTOS.cctvDrainInspection,
     heroAlt: "悉尼通渠 CCTV 管道检测设备",
     icon: Droplets,
     trust: ["持牌水管服务", "CCTV 辅助判断", "24小时紧急通渠", "中文沟通"],
-    symptoms: ["马桶、地漏、厨房水槽下水慢", "排水口返水或有异味", "雨天户外排水不畅或倒灌", "多处排水点同时堵塞", "需要确认管道堵点或是否有破损", "可咨询不通不收费适用条件"],
+    symptoms: ["马桶、地漏、厨房水槽下水慢", "排水口返水或有异味", "雨天户外排水不畅或倒灌", "排水管维修或雨水管维修", "屋顶雨水系统改造咨询", "需要确认管道堵点或是否有破损"],
     process: [
       { title: "先确认现场症状", text: "电话沟通时可说明哪个排水口堵塞、是否返水、是否多处同时堵塞、是否雨天加重，以及所在 suburb。" },
       { title: "现场排查堵塞位置", text: "根据现场情况判断是局部堵塞、主管道问题、stormwater system 问题还是需要进一步 CCTV 管道检测。" },
       { title: "说明处理方式", text: "在施工前说明可能的处理方向，包括通渠、清理、检测或后续维修建议，避免客户不了解下一步。" },
       { title: "保留维护建议", text: "处理后可根据管道情况说明后续维护、树根、油污、塌陷或老旧管道风险。" },
     ],
-    serviceTypes: ["悉尼通渠", "下水道疏通", "排水堵塞", "CCTV 管道检测", "Stormwater system", "雨水排水系统", "Drain cleaning"],
+    serviceTypes: ["悉尼通渠", "排水管维修", "下水道疏通", "排水堵塞", "屋顶雨水系统改造", "CCTV 管道检测", "Stormwater system", "雨水排水系统", "Drain cleaning"],
     faq: [
-      { question: "你们可以做悉尼通渠吗？", answer: "可以。服务范围包括通渠、下水道疏通、排水堵塞、雨水排水系统和 CCTV 管道检测辅助判断。紧急堵塞建议直接电话联系。" },
+      { question: "你们可以做悉尼通渠、排水管维修和屋顶雨水系统吗？", answer: "可以。服务范围包括通渠、排水管维修、下水道疏通、排水堵塞、雨水排水系统、屋顶雨水系统改造和 CCTV 管道检测辅助判断。紧急堵塞或雨天倒灌建议直接电话联系。" },
       { question: "下水道堵塞一定需要 CCTV 吗？", answer: "不一定。CCTV 通常适用于反复堵塞、疑似树根、管道塌陷、购买房产前检查或需要确认堵点位置的情况。" },
       { question: "不通不收费是什么意思？", answer: "客户可以电话咨询适用条件。不同现场、管道结构、堵塞原因和可进入性会影响是否适用，建议先说明现场情况。" },
       { question: "哪些区域可以安排通渠？", answer: "服务重点覆盖 Eastwood、Chatswood、Hurstville、Burwood、Epping、Ryde 及悉尼更多区域。" },
     ],
-    serviceHint: "通渠、下水道堵塞、地漏返水、雨水排水、CCTV 检测...",
+    serviceHint: "通渠、排水管维修、下水道堵塞、地漏返水、屋顶雨水系统、CCTV 检测...",
     relatedImage: REAL_PHOTOS.stormwaterDrainage,
     relatedAlt: "悉尼雨水排水系统现场",
     urgentTitle: "排水返水或马桶堵塞？",
@@ -119,7 +119,7 @@ export const serviceConfigs = {
     },
     eyebrow: "悉尼煤气工",
     h1: "悉尼煤气工｜持牌燃气安装、煤气维修与 LPG/GAS 连接",
-    lead: "燃气服务需要持牌、谨慎和清晰沟通。Lin Plumbing & Gas 提供中文可沟通的燃气安装、煤气维修、燃气表相关检查、LPG/GAS 连接和管线施工说明服务，适合住宅、商铺和餐馆客户咨询。",
+    lead: "燃气服务需要持牌、谨慎和清晰沟通。Lin Plumbing & Gas 提供中文可沟通的燃气安装、煤气维修、燃气表相关检查、LPG/GAS 连接和管线施工服务，适合住宅、商铺和餐馆客户咨询。",
     heroImage: REAL_PHOTOS.gasMeterTest,
     heroAlt: "悉尼持牌煤气工燃气表检测",
     icon: Flame,
@@ -262,7 +262,7 @@ export function ChineseServicePage({ config }: { config: ServicePageConfig }) {
           <div>
             <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">服务区域</p>
             <h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">覆盖悉尼华人常见区域</h2>
-            <p className="mt-6 text-lg leading-8 text-[#526476]">Lin Plumbing & Gas 服务悉尼多个区域。你可以查看所在 suburb 的服务说明，或直接电话确认是否可以安排。</p>
+            <p className="mt-6 text-lg leading-8 text-[#526476]">Lin Plumbing & Gas 服务悉尼多个区域。你可以查看所在区域的服务内容，或直接电话确认是否可以安排。</p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {priorityAreas.map((area) => <a key={area.href} href={area.href} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold transition hover:bg-[#173557] hover:text-white">{area.label}</a>)}

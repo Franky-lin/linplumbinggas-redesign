@@ -35,18 +35,18 @@ type AreaConfig = {
 export const areaConfigs = {
   eastwood: {
     meta: {
-      title: "Eastwood 水管工 | 悉尼华人中文水管与煤气服务 | Lin Plumbing & Gas",
-      description: "Eastwood 水管工中文服务：通渠、热水器维修、漏水维修、持牌煤气工与24小时紧急水管服务。Lin Plumbing & Gas 覆盖 Eastwood、Epping、Ryde、Carlingford 及悉尼周边区域。",
+      title: "Eastwood 水管工 | 悉尼华人水管工、通渠、排水管维修与热水器维修",
+      description: "Eastwood 水管工与悉尼华人水管工服务：通渠、排水管维修、屋顶雨水系统改造、热水器维修、漏水维修、持牌煤气工、餐馆商铺水管与24小时紧急服务。覆盖 Eastwood、Epping、Ryde、Carlingford 及周边华人区。",
       path: "/zh/areas/eastwood",
-      keywords: ["Eastwood 水管工", "Eastwood 中文水管工", "Eastwood 通渠", "Eastwood 热水器维修", "Eastwood 煤气工", "悉尼华人水管工"],
+      keywords: ["Eastwood 水管工", "Eastwood 中文水管工", "悉尼华人水管工", "Eastwood 通渠", "Eastwood 排水管维修", "Eastwood 屋顶雨水系统改造", "Eastwood 热水器维修", "Eastwood 煤气工", "Eastwood 漏水维修"],
     },
     suburb: "Eastwood",
-    h1: "Eastwood 水管工｜中文水管、通渠、热水器与煤气服务",
-    lead: "Eastwood 及周边华人家庭、商铺和餐馆常见需求包括通渠、热水器维修、漏水维修和燃气服务。Lin Plumbing & Gas 提供中文/英文沟通的悉尼持牌水管与煤气服务。",
+    h1: "Eastwood 水管工｜悉尼华人水管工、通渠与热水器维修",
+    lead: "Eastwood 及周边华人家庭、商铺和餐馆常见需求包括通渠、排水管维修、屋顶雨水系统改造、热水器维修、漏水维修和燃气服务。Lin Plumbing & Gas 提供中文/英文沟通的悉尼持牌水管与煤气服务。",
     heroImage: REAL_PHOTOS.teamVehicleTrust,
     heroAlt: "Lin Plumbing and Gas Eastwood 水管工服务车辆",
     nearby: ["Epping", "Ryde", "Carlingford", "Marsfield", "Denistone", "West Ryde"],
-    commonNeeds: ["Eastwood 通渠与下水道疏通", "Eastwood 热水器维修和安装", "Eastwood 漏水维修与水管爆裂", "Eastwood 持牌煤气工", "餐馆和商铺水管维护", "24小时紧急水管服务"],
+    commonNeeds: ["Eastwood 通渠与下水道疏通", "Eastwood 排水管维修与雨水管问题", "Eastwood 屋顶雨水系统改造", "Eastwood 热水器维修和安装", "Eastwood 漏水维修与水管爆裂", "Eastwood 持牌煤气工"],
     areaServed: ["Eastwood", "Epping", "Ryde", "Carlingford", "Marsfield", "Denistone", "West Ryde"],
   },
   chatswood: {
@@ -74,7 +74,7 @@ export const areaConfigs = {
     },
     suburb: "Hurstville",
     h1: "Hurstville 华人水管工｜中文通渠、热水器与煤气服务",
-    lead: "Hurstville 及南区周边华人客户常见需求包括排水堵塞、热水器故障、漏水维修、燃气管线和餐馆商铺维护。Lin Plumbing & Gas 提供中文沟通与持牌服务说明。",
+    lead: "Hurstville 及南区周边华人客户常见需求包括排水堵塞、热水器故障、漏水维修、燃气管线和餐馆商铺维护。Lin Plumbing & Gas 提供中文沟通与持牌服务。",
     heroImage: REAL_PHOTOS.cctvDrainInspection,
     heroAlt: "Hurstville 通渠与 CCTV 管道检测",
     nearby: ["Kogarah", "Allawah", "Beverly Hills", "Carlton", "Penshurst", "Rockdale"],
@@ -120,7 +120,7 @@ export function ChineseAreaPage({ config }: { config: AreaConfig }) {
     localBusinessSchema({
       path: config.meta.path,
       description: config.meta.description,
-      serviceType: [`${config.suburb} 水管工`, `${config.suburb} 通渠`, `${config.suburb} 热水器维修`, `${config.suburb} 煤气工`, "悉尼华人水管工", "中文水管服务"],
+      serviceType: [`${config.suburb} 水管工`, `${config.suburb} 通渠`, `${config.suburb} 排水管维修`, `${config.suburb} 屋顶雨水系统改造`, `${config.suburb} 热水器维修`, `${config.suburb} 煤气工`, "悉尼水管工", "悉尼华人水管工", "中文水管服务"],
       areaServed: config.areaServed,
     }),
     breadcrumbSchema([{ name: "中文首页", path: "/zh" }, { name: `${config.suburb} 水管工`, path: config.meta.path }]),
@@ -156,7 +156,7 @@ export function ChineseAreaPage({ config }: { config: AreaConfig }) {
       <section className="engineering-paper py-24">
         <div className="container grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
-            <SectionHeading eyebrow="本地常见需求" title={`${config.suburb} 客户常见水管与燃气问题`} copy="下面整理了本地区客户常见的水管、通渠、热水器和煤气服务需求，方便你在联系前先判断问题类型。" />
+            <SectionHeading eyebrow="本地常见需求" title={`${config.suburb} 客户常见水管、排水与燃气问题`} copy="下面整理了本地区客户常见的水管、通渠、排水管维修、屋顶雨水系统、热水器和煤气服务需求，方便你在联系前先判断问题类型。" />
             <div className="mt-8"><CallButtons /></div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -176,7 +176,7 @@ export function ChineseAreaPage({ config }: { config: AreaConfig }) {
             <img src={REAL_PHOTOS.gasMeterTest} alt={`${config.suburb} 煤气工`} className="h-56 w-full object-cover object-center sm:col-span-2" />
           </div>
           <div>
-            <SectionHeading dark eyebrow="可协助项目" title="本地区常见水管、排水、热水器与煤气服务" copy="不同现场问题可能涉及通渠、热水器、煤气或漏水维修。你可以先查看对应服务说明，也可以直接电话说明 suburb、问题位置和紧急程度。" />
+            <SectionHeading dark eyebrow="可协助项目" title="本地区常见水管、排水管维修、热水器与煤气服务" copy="不同现场问题可能涉及通渠、排水管维修、屋顶雨水系统、热水器、煤气或漏水维修。你可以先查看对应服务内容，也可以直接电话说明所在区域、问题位置和紧急程度。" />
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {chineseServiceLinks.map((link) => <a key={link.href} href={link.href} className="border border-white/10 bg-white/[0.04] p-4 font-bold text-white transition hover:border-[#f5a623] hover:text-[#f5a623]">{link.title}</a>)}
             </div>

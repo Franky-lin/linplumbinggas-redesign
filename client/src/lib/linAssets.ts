@@ -27,7 +27,7 @@ export const REAL_PHOTOS = {
   residentialHotWaterInstall: "/manus-storage/residential-rinnai-hot-water-install_e25c0ada.jpeg",
   logo: "/manus-storage/logo_white_transparent_c489426c.png",
   roofCopperPipework: "/manus-storage/roof_copper_pipework_d1e2b5b9.jpg",
-  stormwaterDrainage: "/manus-storage/stormwater_drainage_e13e162b.jpg",
+  stormwaterDrainage: "/manus-storage/stormwater-drainage-real-site_7dc6c845.webp",
   teamVehicleTrust: "/manus-storage/team_vehicle_trust_4d608dd1.jpg",
   underSlabPipework: "/manus-storage/under_slab_pipework_fbb0f781.jpg",
 } as const;

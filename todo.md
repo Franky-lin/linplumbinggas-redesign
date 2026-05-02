@@ -318,3 +318,13 @@
 - [ ] 增加一个面向客户的“常见中文搜索问题”区块，让页面自然覆盖中文搜索习惯，而不是展示 SEO 术语。
 - [ ] 检查 sitemap、meta 与结构化数据是否仍对应新的中文 SEO 页面。
 - [ ] 运行生产构建并保存新版本。
+
+## 2026-05-02 Sitemap 與 Google Search Console 收錄提交
+
+- [ ] 核對目前網站正式網域：`https://www.linplumbinggas.com`、`https://linplumbinggas.com` 與 Manus 發布網域。
+- [ ] 檢查現有 `client/public/sitemap.xml` 是否包含英文首頁、中文首頁、中文服務頁與中文區域頁。
+- [ ] 生成或更新 sitemap，使用正式首選網域 `https://www.linplumbinggas.com` 作為 URL 基準。
+- [ ] 檢查 `robots.txt` 是否允許抓取並指向正式 sitemap。
+- [ ] 執行 XML 基本檢查與前端生產構建。
+- [ ] 保存版本。
+- [ ] 提供 Google Search Console 新增資源、驗證網站、提交 sitemap、要求索引與後續檢查的詳細步驟。

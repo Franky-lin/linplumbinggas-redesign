@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.linplumbinggas.com/sitemap.xml
+Sitemap: https://linplumbinggas.com/sitemap.xml

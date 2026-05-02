@@ -348,5 +348,21 @@
 
 ## 2026-05-02 GitHub 版本同步
 
-- [ ] 將目前網站版本保存為新 checkpoint，並同步到 `Franky-lin/linplumbinggas-redesign`。
-- [ ] 檢查同步流程是否成功完成，並向用戶回報版本 ID。
+- [x] 已將目前網站版本保存為新 checkpoint，並同步到 `Franky-lin/linplumbinggas-redesign`。
+- [x] 同步流程已完成，最新版本 ID：`cefb490d`。
+
+## 2026-05-02 外部部署環境變量檢查
+
+- [x] 已掃描專案中是否引用 `.env`、`import.meta.env`、`process.env` 或第三方服務密鑰。
+- [x] 已判斷網站在 Vercel、Netlify、Cloudflare Pages、GitHub Pages 等外部平台部署時的環境變量需求。
+- [x] 已整理安全的 `.env.example` 與部署配置說明，未暴露 Manus 平台 token 或其他敏感密鑰。
+
+## 2026-05-02 圖片本地化與 Vercel 部署適配
+
+- [x] 已盤點所有 `/manus-storage/` 圖片引用，共確認 17 個需要遷移的素材。
+- [x] 已將 17 個圖片素材下載並保存到倉庫內 `client/public/images`，讓 Vercel 可直接部署。
+- [x] 已修改代碼中的圖片路徑，改為引用 `/images/...` 本地靜態路徑。
+- [x] 已移除 Manus analytics 與 runtime 對外部部署的影響，並新增 `vercel.json` 配置。
+- [x] 已執行 `pnpm build:client`，確認 Vercel 前端構建成功；部署輸出包含 17 個本地圖片且沒有殘留 `/manus-storage/` 引用。
+- [ ] 保存 checkpoint 並同步最新代碼與圖片文件到 GitHub。
+- [ ] 回報 GitHub 倉庫是否已包含所有圖片文件。

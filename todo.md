@@ -340,3 +340,13 @@
 - [ ] 優化不足頁面的 title、description、canonical、structured data 與客戶可見標題。
 - [ ] 執行生產構建並抽查重要頁面的 head 輸出。
 - [ ] 保存新版本並交付檢查結果表。
+
+## 2026-05-02 GitHub 連線確認
+
+- [x] 確認目前 GitHub 遠端已連接到 Franky-lin 帳號下的 repository。
+- [x] 已核對目前遠端名稱、遠端 URL 與同步狀態；回報時不暴露任何 access token。
+
+## 2026-05-02 GitHub 版本同步
+
+- [ ] 將目前網站版本保存為新 checkpoint，並同步到 `Franky-lin/linplumbinggas-redesign`。
+- [ ] 檢查同步流程是否成功完成，並向用戶回報版本 ID。

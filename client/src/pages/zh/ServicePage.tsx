@@ -45,7 +45,7 @@ export const serviceConfigs = {
   blockedDrains: {
     meta: {
       title: "悉尼通渠 | 排水管维修、屋顶雨水系统改造与 CCTV 管道检测 | Lin Plumbing & Gas",
-      description: "Lin Plumbing & Gas 提供悉尼通渠、排水管维修、下水道疏通、屋顶雨水系统改造、雨水排水系统和 CCTV 管道检测服务。中文沟通，持牌服务，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区。",
+      description: "Lin Plumbing & Gas 提供悉尼通渠、排水管维修、下水道疏通、屋顶雨水系统改造、雨水排水系统和 CCTV 管道检测服务。中文沟通，持牌服务，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区，堵塞或返水可立即致电。",
       path: "/zh/blocked-drains",
       keywords: ["悉尼通渠", "悉尼下水道疏通", "blocked drains Sydney 中文", "CCTV 管道检测", "Eastwood 通渠", "Chatswood 通渠", "Hurstville 通渠", "不通不收费"],
     },
@@ -79,7 +79,7 @@ export const serviceConfigs = {
   hotWater: {
     meta: {
       title: "悉尼热水器维修 | 热水炉安装与没有热水处理 | Lin Plumbing & Gas",
-      description: "悉尼热水器维修、热水炉安装、没有热水、热水器漏水和住宅热水系统管路服务。Lin Plumbing & Gas 提供中文沟通、持牌水管与燃气服务，覆盖悉尼华人社区。",
+      description: "Lin Plumbing & Gas 提供悉尼热水器维修、热水炉安装、没有热水处理、热水器漏水和住宅热水系统管路服务。中文沟通，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区，紧急没有热水可立即致电。",
       path: "/zh/hot-water",
       keywords: ["悉尼热水器维修", "悉尼热水炉维修", "热水器安装 Sydney", "没有热水", "热水器漏水", "Eastwood 热水器维修", "Chatswood 热水器维修"],
     },
@@ -112,8 +112,8 @@ export const serviceConfigs = {
   },
   gas: {
     meta: {
-      title: "悉尼煤气工 | 持牌燃气安装、煤气维修与 LPG/GAS 连接",
-      description: "Lin Plumbing & Gas 提供悉尼煤气工、持牌燃气安装、煤气维修、LPG/GAS 连接、燃气表和燃气管线相关服务。中文沟通，覆盖悉尼华人社区与全区客户。",
+      title: "悉尼煤气工 | 持牌燃气安装、煤气维修与 LPG/GAS 连接 | Lin Plumbing & Gas",
+      description: "Lin Plumbing & Gas 提供悉尼煤气工、持牌燃气安装、煤气维修、LPG/GAS 连接、燃气表和燃气管线相关服务。中文沟通，服务住宅、商铺与餐馆，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区，燃气问题可立即致电咨询。",
       path: "/zh/gas",
       keywords: ["悉尼煤气工", "悉尼持牌煤气工", "燃气安装 Sydney", "煤气维修", "LPG GAS 连接", "gas fitter Sydney 中文", "Eastwood 煤气工"],
     },
@@ -146,8 +146,8 @@ export const serviceConfigs = {
   },
   leakRepair: {
     meta: {
-      title: "悉尼漏水维修 | 水管爆裂、浴室厨房水管与紧急水管工",
-      description: "Lin Plumbing & Gas 提供悉尼漏水维修、水管爆裂、浴室厨房水管、水龙头马桶维修和24小时紧急水管服务。中文沟通，持牌服务，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区。",
+      title: "悉尼漏水维修 | 水管爆裂、紧急水管工与浴室厨房水管 | Lin Plumbing & Gas",
+      description: "Lin Plumbing & Gas 提供悉尼漏水维修、水管爆裂、浴室厨房水管、水龙头马桶维修和 24 小时紧急水管服务。中文沟通，持牌服务，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼全区，漏水可立即致电。",
       path: "/zh/leak-repair",
       keywords: ["悉尼漏水维修", "悉尼水管爆裂", "悉尼紧急水管工", "浴室漏水维修", "厨房水管维修", "Eastwood 漏水维修", "Chatswood 漏水维修"],
     },

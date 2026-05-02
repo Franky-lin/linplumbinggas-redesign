@@ -328,3 +328,15 @@
 - [ ] 執行 XML 基本檢查與前端生產構建。
 - [ ] 保存版本。
 - [ ] 提供 Google Search Console 新增資源、驗證網站、提交 sitemap、要求索引與後續檢查的詳細步驟。
+
+## 2026-05-02 全站 Meta Title 與 Description SEO 檢查
+
+- [ ] 盤點目前網站所有可索引頁面路由，包括英文首頁、中文首頁、中文服務頁與中文區域頁。
+- [ ] 檢查每個頁面的 meta title 是否包含主要服務詞、區域詞與品牌詞，且長度適合 Google 搜尋結果展示。
+- [ ] 檢查每個頁面的 meta description 是否自然包含客戶會搜尋的服務需求、地區、持牌與緊急服務訊息。
+- [ ] 檢查 canonical 是否使用正式主網域 `https://linplumbinggas.com`。
+- [ ] 檢查首頁與中文首頁是否具備正確 hreflang 關係。
+- [ ] 檢查每個頁面的 H1 是否與 meta title 搜尋意圖一致，但避免完全機械重複。
+- [ ] 優化不足頁面的 title、description、canonical、structured data 與客戶可見標題。
+- [ ] 執行生產構建並抽查重要頁面的 head 輸出。
+- [ ] 保存新版本並交付檢查結果表。

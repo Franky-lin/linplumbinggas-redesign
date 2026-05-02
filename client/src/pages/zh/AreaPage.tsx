@@ -35,8 +35,8 @@ type AreaConfig = {
 export const areaConfigs = {
   eastwood: {
     meta: {
-      title: "Eastwood 水管工 | 悉尼华人水管工、通渠、排水管维修与热水器维修",
-      description: "Eastwood 水管工与悉尼华人水管工服务：通渠、排水管维修、屋顶雨水系统改造、热水器维修、漏水维修、持牌煤气工、餐馆商铺水管与24小时紧急服务。覆盖 Eastwood、Epping、Ryde、Carlingford 及周边华人区。",
+      title: "Eastwood 水管工 | 华人水管工、通渠与热水器维修 | Lin Plumbing & Gas",
+      description: "Eastwood 水管工与悉尼华人水管工服务：通渠、排水管维修、屋顶雨水系统改造、热水器维修、漏水维修、持牌煤气工、餐馆商铺水管与 24 小时紧急服务。Lin Plumbing & Gas 覆盖 Eastwood、Epping、Ryde、Carlingford 及周边华人区，紧急情况可立即致电。",
       path: "/zh/areas/eastwood",
       keywords: ["Eastwood 水管工", "Eastwood 中文水管工", "悉尼华人水管工", "Eastwood 通渠", "Eastwood 排水管维修", "Eastwood 屋顶雨水系统改造", "Eastwood 热水器维修", "Eastwood 煤气工", "Eastwood 漏水维修"],
     },
@@ -51,8 +51,8 @@ export const areaConfigs = {
   },
   chatswood: {
     meta: {
-      title: "Chatswood 水管工 | 中文通渠、热水器维修与煤气工",
-      description: "Chatswood 中文水管工服务：通渠、下水道疏通、热水器维修、漏水维修、持牌煤气工与紧急水管服务。Lin Plumbing & Gas 覆盖 Chatswood、Willoughby、Lane Cove、Artarmon 及悉尼周边。",
+      title: "Chatswood 水管工 | 中文通渠、热水器维修与煤气工 | Lin Plumbing & Gas",
+      description: "Chatswood 中文水管工服务：通渠、下水道疏通、热水器维修、漏水维修、持牌煤气工与紧急水管服务。Lin Plumbing & Gas 覆盖 Chatswood、Willoughby、Lane Cove、Artarmon 及北岸周边，紧急情况可立即致电。",
       path: "/zh/areas/chatswood",
       keywords: ["Chatswood 水管工", "Chatswood 中文水管工", "Chatswood 通渠", "Chatswood 热水器维修", "Chatswood 煤气工", "Chatswood 漏水维修"],
     },
@@ -67,8 +67,8 @@ export const areaConfigs = {
   },
   hurstville: {
     meta: {
-      title: "Hurstville 水管工 | 华人区中文水管、通渠与热水器维修",
-      description: "Hurstville 华人水管工中文服务：通渠、热水器维修、漏水维修、持牌煤气工、餐馆商铺水管与24小时紧急服务。覆盖 Hurstville、Kogarah、Allawah、Beverly Hills 及周边。",
+      title: "Hurstville 水管工 | 华人区通渠、热水器维修与煤气工 | Lin Plumbing & Gas",
+      description: "Hurstville 华人水管工中文服务：通渠、热水器维修、漏水维修、持牌煤气工、餐馆商铺水管与 24 小时紧急服务。Lin Plumbing & Gas 覆盖 Hurstville、Kogarah、Allawah、Beverly Hills 及南区周边，紧急情况可立即致电。",
       path: "/zh/areas/hurstville",
       keywords: ["Hurstville 水管工", "Hurstville 华人水管工", "Hurstville 通渠", "Hurstville 热水器维修", "Hurstville 煤气工", "悉尼中文水管工"],
     },
@@ -83,8 +83,8 @@ export const areaConfigs = {
   },
   burwood: {
     meta: {
-      title: "Burwood 水管工 | 中文通渠、漏水维修、热水器与煤气工",
-      description: "Burwood 中文水管工服务：通渠、漏水维修、热水器维修、持牌煤气工、商业水管维护与24小时紧急服务。覆盖 Burwood、Strathfield、Ashfield、Auburn 及周边区域。",
+      title: "Burwood 水管工 | 中文通渠、漏水维修、热水器与煤气工 | Lin Plumbing & Gas",
+      description: "Burwood 中文水管工服务：通渠、漏水维修、热水器维修、持牌煤气工、商业水管维护与 24 小时紧急服务。Lin Plumbing & Gas 覆盖 Burwood、Strathfield、Ashfield、Auburn 及内西区周边，紧急情况可立即致电。",
       path: "/zh/areas/burwood",
       keywords: ["Burwood 水管工", "Burwood 中文水管工", "Burwood 通渠", "Burwood 漏水维修", "Burwood 热水器维修", "Burwood 煤气工"],
     },
@@ -99,8 +99,8 @@ export const areaConfigs = {
   },
   eppingRyde: {
     meta: {
-      title: "Epping Ryde 水管工 | 中文水管、通渠、热水器与煤气服务",
-      description: "Epping/Ryde 中文水管工服务：通渠、热水器维修、漏水维修、持牌煤气工、雨水排水系统与24小时紧急水管服务。覆盖 Epping、Ryde、Eastwood、Macquarie Park 及周边。",
+      title: "Epping Ryde 水管工 | 中文通渠、热水器维修与煤气服务 | Lin Plumbing & Gas",
+      description: "Epping/Ryde 中文水管工服务：通渠、热水器维修、漏水维修、持牌煤气工、雨水排水系统与 24 小时紧急水管服务。Lin Plumbing & Gas 覆盖 Epping、Ryde、Eastwood、Macquarie Park 及周边，紧急情况可立即致电。",
       path: "/zh/areas/epping-ryde",
       keywords: ["Epping 水管工", "Ryde 水管工", "Epping 中文水管工", "Ryde 通渠", "Ryde 热水器维修", "Epping 煤气工"],
     },

@@ -22,7 +22,7 @@ import {
 
 const meta = {
   title: "悉尼华人水管工 | 中文水管工与持牌煤气工 | Lin Plumbing & Gas",
-  description: "Lin Plumbing & Gas 提供悉尼华人水管工、中文水管工、持牌煤气工、通渠、热水器维修、漏水维修与24小时紧急服务，覆盖 Eastwood、Chatswood、Hurstville、Burwood、Epping、Ryde 及悉尼全区。",
+  description: "Lin Plumbing & Gas 提供悉尼华人水管工、中文水管工、通渠、热水器维修、漏水维修、排水管维修与持牌煤气服务。覆盖 Eastwood、Chatswood、Hurstville、Burwood、Epping、Ryde 及悉尼全区，紧急情况可立即致电。",
   path: "/zh",
   keywords: ["悉尼华人水管工", "悉尼中文水管工", "悉尼水管工", "悉尼煤气工", "悉尼通渠", "悉尼热水器维修", "Eastwood 水管工", "Chatswood 水管工", "Hurstville 水管工"],
 };

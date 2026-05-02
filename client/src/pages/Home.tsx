@@ -371,6 +371,7 @@ export default function Home() {
             <Button type="button" variant="outline" aria-label={t.langHint} onClick={() => setLang(lang === "en" ? "zh" : "en")} className="rounded-none border-white/30 bg-white/5 px-3 font-bold text-white hover:bg-white hover:text-[#173557]">
               <Globe2 className="mr-2 h-4 w-4" /> {t.langButton}
             </Button>
+            <Button asChild variant="outline" className="hidden rounded-none border-white/30 bg-white/5 px-3 font-bold text-white hover:bg-white hover:text-[#173557] sm:inline-flex"><a href="/zh">中文专题页</a></Button>
             <Button asChild className="hidden rounded-none bg-[#f5a623] font-extrabold text-[#142f4d] hover:bg-[#ffc14d] md:inline-flex"><a href={BUSINESS.phoneHref}><Phone className="mr-2 h-4 w-4" /> {t.callNow}</a></Button>
             <Menu className="h-6 w-6 text-white/60 lg:hidden" />
           </div>
@@ -422,6 +423,7 @@ export default function Home() {
               <div className="mt-5 flex flex-wrap gap-2">
                 {t.chineseClientTags.map((tag) => <span key={tag} className="border border-[#173557]/15 bg-[#faf8f5] px-3 py-2 text-sm font-bold text-[#173557]">{tag}</span>)}
               </div>
+              <a href="/zh" className="mt-6 inline-flex bg-[#173557] px-5 py-3 font-bold text-white transition hover:bg-[#102941]">进入完整中文服务页面 →</a>
             </div>
           </div>
         </section>

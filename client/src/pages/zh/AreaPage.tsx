@@ -156,7 +156,7 @@ export function ChineseAreaPage({ config }: { config: AreaConfig }) {
       <section className="engineering-paper py-24">
         <div className="container grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
-            <SectionHeading eyebrow="本地常见需求" title={`${config.suburb} 客户常见水管与燃气问题`} copy="区域页将 suburb 名称与具体服务连接起来，方便中文客户快速判断是否适合联系。" />
+            <SectionHeading eyebrow="本地常见需求" title={`${config.suburb} 客户常见水管与燃气问题`} copy="下面整理了本地区客户常见的水管、通渠、热水器和煤气服务需求，方便你在联系前先判断问题类型。" />
             <div className="mt-8"><CallButtons /></div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -176,7 +176,7 @@ export function ChineseAreaPage({ config }: { config: AreaConfig }) {
             <img src={REAL_PHOTOS.gasMeterTest} alt={`${config.suburb} 煤气工`} className="h-56 w-full object-cover object-center sm:col-span-2" />
           </div>
           <div>
-            <SectionHeading dark eyebrow="服务结构" title="一个区域页连接多个高意图服务" copy="中文客户搜索时经常把 suburb 和服务组合在一起，例如“Eastwood 通渠”“Chatswood 热水器维修”。页面把这些需求集中说明，并链接到独立服务页。" />
+            <SectionHeading dark eyebrow="可协助项目" title="本地区常见水管、排水、热水器与煤气服务" copy="不同现场问题可能涉及通渠、热水器、煤气或漏水维修。你可以先查看对应服务说明，也可以直接电话说明 suburb、问题位置和紧急程度。" />
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {chineseServiceLinks.map((link) => <a key={link.href} href={link.href} className="border border-white/10 bg-white/[0.04] p-4 font-bold text-white transition hover:border-[#f5a623] hover:text-[#f5a623]">{link.title}</a>)}
             </div>

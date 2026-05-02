@@ -56,7 +56,7 @@ export const serviceConfigs = {
     heroAlt: "悉尼通渠 CCTV 管道检测设备",
     icon: Droplets,
     trust: ["持牌水管服务", "CCTV 辅助判断", "24小时紧急通渠", "中文沟通"],
-    symptoms: ["马桶、地漏、厨房水槽下水慢", "排水口返水或有异味", "雨天户外排水不畅或倒灌", "多处排水点同时堵塞", "需要确认管道内部堵点或破损", "可咨询不通不收费适用条件"],
+    symptoms: ["马桶、地漏、厨房水槽下水慢", "排水口返水或有异味", "雨天户外排水不畅或倒灌", "多处排水点同时堵塞", "需要确认管道堵点或是否有破损", "可咨询不通不收费适用条件"],
     process: [
       { title: "先确认现场症状", text: "电话沟通时可说明哪个排水口堵塞、是否返水、是否多处同时堵塞、是否雨天加重，以及所在 suburb。" },
       { title: "现场排查堵塞位置", text: "根据现场情况判断是局部堵塞、主管道问题、stormwater system 问题还是需要进一步 CCTV 管道检测。" },
@@ -68,7 +68,7 @@ export const serviceConfigs = {
       { question: "你们可以做悉尼通渠吗？", answer: "可以。服务范围包括通渠、下水道疏通、排水堵塞、雨水排水系统和 CCTV 管道检测辅助判断。紧急堵塞建议直接电话联系。" },
       { question: "下水道堵塞一定需要 CCTV 吗？", answer: "不一定。CCTV 通常适用于反复堵塞、疑似树根、管道塌陷、购买房产前检查或需要确认堵点位置的情况。" },
       { question: "不通不收费是什么意思？", answer: "客户可以电话咨询适用条件。不同现场、管道结构、堵塞原因和可进入性会影响是否适用，建议先说明现场情况。" },
-      { question: "哪些区域可以安排通渠？", answer: "网站重点覆盖 Eastwood、Chatswood、Hurstville、Burwood、Epping、Ryde 及悉尼更多区域。" },
+      { question: "哪些区域可以安排通渠？", answer: "服务重点覆盖 Eastwood、Chatswood、Hurstville、Burwood、Epping、Ryde 及悉尼更多区域。" },
     ],
     serviceHint: "通渠、下水道堵塞、地漏返水、雨水排水、CCTV 检测...",
     relatedImage: REAL_PHOTOS.stormwaterDrainage,
@@ -133,10 +133,10 @@ export const serviceConfigs = {
     ],
     serviceTypes: ["悉尼煤气工", "持牌煤气工", "燃气安装", "煤气维修", "LPG/GAS 连接", "Gas fitting", "Gas repairs"],
     faq: [
-      { question: "你们是持牌煤气工吗？", answer: `Lin Plumbing & Gas 网站展示的执照信息为 ${BUSINESS.license}，可联系咨询燃气安装、煤气维修、燃气表和管线相关服务。` },
+      { question: "你们是持牌煤气工吗？", answer: `Lin Plumbing & Gas 的执照信息为 ${BUSINESS.license}，可联系咨询燃气安装、煤气维修、燃气表和管线相关服务。` },
       { question: "餐馆或商铺燃气可以咨询吗？", answer: "可以。可说明店铺类型、燃气设备、现有管线和需要改动的内容，再判断是否适合安排现场查看。" },
       { question: "闻到煤气味怎么办？", answer: "应先以安全为先，避免明火和电气开关操作，远离风险区域并按当地安全建议处理。之后再联系专业燃气人员。" },
-      { question: "可以做 LPG/GAS 连接吗？", answer: "可以联系咨询。页面服务范围包括 LPG/GAS 连接、燃气管线和燃气设备相关施工说明。" },
+      { question: "可以做 LPG/GAS 连接吗？", answer: "可以联系咨询。服务范围包括 LPG/GAS 连接、燃气管线和燃气设备相关施工说明。" },
     ],
     serviceHint: "燃气安装、煤气维修、LPG/GAS 连接、燃气表或管线...",
     relatedImage: REAL_PHOTOS.gasToolsSite,
@@ -170,7 +170,7 @@ export const serviceConfigs = {
       { question: "水管爆裂应该先做什么？", answer: "如果安全可行，先关闭总水阀或相关阀门，远离可能受影响的电气区域，然后直接电话联系。" },
       { question: "墙内或天花漏水可以处理吗？", answer: "可以联系咨询。请说明渗水位置、是否持续扩大、是否楼上有浴室或热水设备，并尽量准备照片。" },
       { question: "水龙头、马桶、浴室厨房水管也可以修吗？", answer: "可以。服务范围包括常见住宅与商业物业水管维护、漏水维修、水龙头、马桶和浴室厨房管路问题。" },
-      { question: "晚上漏水可以联系吗？", answer: "网站服务说明包含 24/7 紧急响应。紧急漏水建议直接拨打 0430 731 989。" },
+      { question: "晚上漏水可以联系吗？", answer: "我们提供 24/7 紧急响应。紧急漏水建议直接拨打 0430 731 989。" },
     ],
     serviceHint: "漏水维修、水管爆裂、墙面渗水、马桶水龙头漏水...",
     relatedImage: REAL_PHOTOS.finishedBathroom,
@@ -233,7 +233,7 @@ export function ChineseServicePage({ config }: { config: ServicePageConfig }) {
       <section className="engineering-paper py-24">
         <div className="container grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div>
-            <SectionHeading eyebrow="适合联系的情况" title="哪些问题适合联系 Lin Plumbing & Gas？" copy="以下场景是中文客户常见搜索和咨询方式。紧急情况建议直接电话说明现场情况。" />
+            <SectionHeading eyebrow="适合联系的情况" title="哪些问题适合联系 Lin Plumbing & Gas？" copy="以下是客户经常遇到的现场情况。紧急问题建议直接电话说明位置、症状和所在区域。" />
             <div className="mt-8"><CallButtons /></div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -249,7 +249,7 @@ export function ChineseServicePage({ config }: { config: ServicePageConfig }) {
             <img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas 悉尼服务车辆" className="h-80 w-full object-cover object-center" />
           </div>
           <div>
-            <SectionHeading dark eyebrow="处理流程" title="先了解现场，再说明处理方向" copy="中文页面强调清晰沟通：先判断症状、区域和紧急程度，再根据现场情况说明可能的处理方式。" />
+            <SectionHeading dark eyebrow="处理流程" title="先了解现场，再说明处理方向" copy="我们会先了解症状、区域和紧急程度，再根据现场情况说明可能的处理方式。" />
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {config.process.map((step, index) => <article key={step.title} className="border border-white/10 bg-white/[0.04] p-5"><p className="font-display text-sm font-bold text-[#f5a623]">0{index + 1}</p><h3 className="mt-3 font-display text-2xl font-bold leading-tight text-white">{step.title}</h3><p className="mt-3 leading-7 text-white/70">{step.text}</p></article>)}
             </div>
@@ -262,7 +262,7 @@ export function ChineseServicePage({ config }: { config: ServicePageConfig }) {
           <div>
             <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">服务区域</p>
             <h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">覆盖悉尼华人常见区域</h2>
-            <p className="mt-6 text-lg leading-8 text-[#526476]">Lin Plumbing & Gas 服务悉尼全区，并针对高搜索需求的华人社区建立独立区域页面。</p>
+            <p className="mt-6 text-lg leading-8 text-[#526476]">Lin Plumbing & Gas 服务悉尼多个区域。你可以查看所在 suburb 的服务说明，或直接电话确认是否可以安排。</p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {priorityAreas.map((area) => <a key={area.href} href={area.href} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold transition hover:bg-[#173557] hover:text-white">{area.label}</a>)}
@@ -275,7 +275,7 @@ export function ChineseServicePage({ config }: { config: ServicePageConfig }) {
           <div>
             <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">相关中文服务</p>
             <h2 className="mt-3 font-display text-5xl font-bold leading-none text-[#173557] md:text-7xl">从当前问题延伸到相邻服务</h2>
-            <p className="mt-6 text-lg leading-8 text-[#526476]">很多现场问题会同时涉及排水、热水、燃气或漏水。内部链接帮助客户和搜索引擎理解服务结构。</p>
+            <p className="mt-6 text-lg leading-8 text-[#526476]">很多现场问题会同时涉及排水、热水、燃气或漏水。下面列出相关服务，方便你快速找到更接近现场情况的说明。</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {chineseServiceLinks.filter((link) => link.href !== config.meta.path).map((link) => <a key={link.href} href={link.href} className="trade-card overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={link.image} alt={link.title} className="h-44 w-full object-cover object-center" /><div className="p-5"><h3 className="font-display text-2xl font-bold leading-tight text-[#173557]">{link.title}</h3><p className="mt-3 leading-7 text-[#526476]">{link.text}</p></div></a>)}

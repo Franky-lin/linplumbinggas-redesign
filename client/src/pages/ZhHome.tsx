@@ -40,9 +40,9 @@ const services = [
 
 const faqs = [
   { question: "你们是悉尼华人水管工吗？", answer: "Lin Plumbing & Gas 面向悉尼华人和本地客户提供持牌水管与燃气服务。中文和英文均可沟通，紧急情况建议直接电话联系。" },
-  { question: "是否提供 24 小时紧急水管服务？", answer: "网站服务说明包含 24/7 紧急水管与燃气响应。遇到水管爆裂、排水返水、没有热水或疑似燃气问题时，建议优先致电 0430 731 989。" },
+  { question: "是否提供 24 小时紧急水管服务？", answer: "我们提供 24/7 紧急水管与燃气响应。遇到水管爆裂、排水返水、没有热水或疑似燃气问题时，建议优先致电 0430 731 989。" },
   { question: "可以做通渠和 CCTV 管道检测吗？", answer: "可以。服务范围包括通渠、下水道疏通、排水堵塞、stormwater system、雨水管问题和 CCTV 管道检测辅助判断。" },
-  { question: "可以处理热水器和煤气问题吗？", answer: "可以联系咨询。网站服务范围包括热水器安装维修、持牌煤气工、燃气安装、煤气维修和 LPG/GAS 连接等。" },
+  { question: "可以处理热水器和煤气问题吗？", answer: "可以联系咨询。服务范围包括热水器安装维修、持牌煤气工、燃气安装、煤气维修和 LPG/GAS 连接等。" },
   { question: "服务哪些华人区？", answer: "重点覆盖 Eastwood、Chatswood、Hurstville、Burwood、Epping、Ryde，也服务 Parramatta、Strathfield、Bankstown、Ashfield、Auburn、Carlingford 及悉尼更多区域。" },
 ];
 
@@ -99,10 +99,10 @@ export default function ZhHome() {
         <div className="container grid gap-8 border-l-8 border-[#f5a623] bg-white p-6 shadow-sm lg:grid-cols-[0.82fr_1.18fr] lg:items-center lg:p-8">
           <div>
             <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">中文客户服务</p>
-            <h2 className="mt-3 font-display text-4xl font-bold leading-none text-[#173557] md:text-6xl">不是简单翻译，而是按悉尼华人客户的搜索习惯组织内容</h2>
+            <h2 className="mt-3 font-display text-4xl font-bold leading-none text-[#173557] md:text-6xl">中文沟通清楚说明服务范围与现场情况</h2>
           </div>
           <div>
-            <p className="text-lg leading-8 text-[#526476]">中文客户常用“悉尼水管工”“悉尼煤气工”“悉尼通渠”“热水器维修”“Eastwood 水管工”等词来找服务。本页把这些服务、区域和紧急场景直接说明，减少来回沟通成本。</p>
+            <p className="text-lg leading-8 text-[#526476]">如果你需要找悉尼水管工、悉尼煤气工、通渠、热水器维修或本地区水管服务，本页会直接说明 Lin Plumbing & Gas 可以协助的项目、服务区域和紧急联系方法，方便你在预约前先了解情况。</p>
             <div className="mt-5 flex flex-wrap gap-2">
               {["悉尼水管工", "悉尼煤气工", "悉尼热水器维修", "悉尼通渠", "中文服务", "不通不收费可咨询"].map((tag) => <span key={tag} className="border border-[#173557]/15 bg-[#faf8f5] px-3 py-2 text-sm font-bold text-[#173557]">{tag}</span>)}
             </div>
@@ -112,7 +112,7 @@ export default function ZhHome() {
 
       <section id="services" className="engineering-paper scroll-mt-32 py-24">
         <div className="container">
-          <SectionHeading eyebrow="服务项目" title="悉尼水管、通渠、煤气、热水器与漏水维修" copy="每个服务都使用独立中文页面承接对应搜索意图，同时保留电话、真实现场图片、持牌信息和区域覆盖说明。" />
+          <SectionHeading eyebrow="服务项目" title="悉尼水管、通渠、煤气、热水器与漏水维修" copy="下面按常见问题整理服务范围。你可以先选择需要的项目，再通过电话或询价信息说明现场情况、所在区域和是否紧急。" />
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service, index) => {
               const Icon = service.icon;
@@ -123,7 +123,7 @@ export default function ZhHome() {
                     <div className="flex items-start justify-between gap-5"><div className="flex h-14 w-14 shrink-0 items-center justify-center bg-[#f5a623] text-[#142f4d]"><Icon className="h-7 w-7" /></div><span className="font-display text-sm font-bold text-[#b86f3c]">0{index + 1}</span></div>
                     <h3 className="mt-7 font-display text-3xl font-bold leading-none text-[#173557]">{service.title}</h3>
                     <p className="mt-4 text-base leading-7 text-[#526476]">{service.text}</p>
-                    <a href={service.href} className="mt-5 inline-flex font-bold text-[#b86f3c] hover:text-[#173557]">查看中文页面 →</a>
+                    <a href={service.href} className="mt-5 inline-flex font-bold text-[#b86f3c] hover:text-[#173557]">查看服务详情 →</a>
                   </div>
                 </article>
               );
@@ -140,7 +140,7 @@ export default function ZhHome() {
             <img src={REAL_PHOTOS.residentialHotWaterInstall} alt="悉尼热水器安装维修" className="h-56 w-full object-cover object-center sm:col-span-2" />
           </div>
           <div>
-            <SectionHeading dark eyebrow="重点页面" title="把高意图中文关键词拆成独立服务页" copy="中文 SEO 不只依赖首页。通渠、热水器、煤气和漏水维修都有独立页面，分别解释症状、处理方式、适合联系的情况和覆盖区域。" />
+            <SectionHeading dark eyebrow="详细服务" title="按问题类型查看更详细的中文服务说明" copy="通渠、热水器、煤气和漏水维修等常见问题都有更详细的中文说明，方便你判断是否需要尽快联系、现场可能需要检查哪些位置，以及可以提前准备哪些信息。" />
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {chineseServiceLinks.map((link) => <a key={link.href} href={link.href} className="border border-white/10 bg-white/[0.04] p-4 font-bold text-white transition hover:border-[#f5a623] hover:text-[#f5a623]">{link.title}</a>)}
             </div>
@@ -152,7 +152,7 @@ export default function ZhHome() {
         <div className="container grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
           <img src={REAL_PHOTOS.teamVehicleTrust} alt="Lin Plumbing and Gas 悉尼服务车辆" className="h-[520px] w-full object-cover object-center shadow-2xl" />
           <div>
-            <SectionHeading eyebrow="服务区域" title="悉尼华人社区与重点 Suburb 页面" copy="针对 Eastwood、Chatswood、Hurstville、Burwood、Epping/Ryde 等华人客户集中区域，网站提供独立中文区域页，强化本地搜索匹配。" />
+            <SectionHeading eyebrow="服务区域" title="悉尼常见华人社区与服务区域" copy="Lin Plumbing & Gas 服务悉尼多个区域，包括 Eastwood、Chatswood、Hurstville、Burwood、Epping、Ryde 及周边 suburb。你可以查看所在区域的服务说明，或直接电话确认是否可安排。" />
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {priorityAreas.map((area) => <a key={area.href} href={area.href} className="border-l-4 border-[#f5a623] bg-white p-4 font-bold transition hover:bg-[#173557] hover:text-white">{area.label}</a>)}
             </div>

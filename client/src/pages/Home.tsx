@@ -54,6 +54,10 @@ const copy = {
       { title: "24/7 Emergency", detail: "Urgent leaks, gas and drains", icon: Clock3 },
       { title: "Clear service", detail: "Practical advice before work starts", icon: CheckCircle2 },
     ],
+    chineseClientEyebrow: "Chinese-speaking service in Sydney",
+    chineseClientTitle: "悉尼华人水管工｜中文可沟通的水管、煤气、热水器和通渠服务",
+    chineseClientCopy: "Lin Plumbing & Gas helps Chinese-speaking and local Sydney customers with 悉尼水管工、悉尼煤气工、热水器安装维修、通渠、下水道疏通、漏水维修、雨水排水系统、泵系统 and 24/7 emergency plumbing and gas response. English and Chinese communication is available for Eastwood, Chatswood, Hurstville, Burwood and wider Sydney suburbs.",
+    chineseClientTags: ["悉尼水管工", "悉尼煤气工", "悉尼热水器维修", "悉尼通渠", "中文服务"],
     servicesEyebrow: "Services",
     servicesTitle: "Sydney Plumbing, Gas, Drainage & Hot Water Services",
     servicesCopy: "Clear service categories help customers find the right help quickly across emergency plumbing, gas fitting, blocked drains, stormwater systems, pump systems, hot water repairs and pipework jobs.",
@@ -146,6 +150,10 @@ const copy = {
       { title: "24/7 紧急服务", detail: "漏水、燃气与排水问题", icon: Clock3 },
       { title: "沟通清晰", detail: "施工前先说明处理方式", icon: CheckCircle2 },
     ],
+    chineseClientEyebrow: "悉尼中文服务",
+    chineseClientTitle: "悉尼华人水管工｜中文可沟通的水管、煤气、热水器和通渠服务",
+    chineseClientCopy: "Lin Plumbing & Gas 面向悉尼华人和本地客户，提供悉尼水管工、悉尼煤气工、热水器安装维修、通渠、下水道疏通、漏水维修、雨水排水系统、泵系统和 24/7 紧急水管与燃气服务。中文和英文均可沟通，覆盖 Eastwood、Chatswood、Hurstville、Burwood 及悉尼更多区域。",
+    chineseClientTags: ["悉尼水管工", "悉尼煤气工", "悉尼热水器维修", "悉尼通渠", "中文服务"],
     servicesEyebrow: "服务项目",
     servicesTitle: "悉尼水管工、煤气工、排水系统、泵系统与热水器维修",
     servicesCopy: "清晰的服务分类可以帮助客户快速找到合适服务，覆盖悉尼水工、紧急水管维修、煤气工、通渠、下水道疏通、雨水排水系统、泵系统、热水器安装维修和管道工程。",
@@ -326,7 +334,7 @@ export default function Home() {
     areaServed: ["Sydney, NSW, Australia", "Eastwood", "Chatswood", "Hurstville", "Burwood", "Ryde", "Epping", "Parramatta", "Strathfield", "Bankstown", "Ashfield", "Auburn", "Carlingford"],
     openingHours: "Mo-Su 00:00-23:59",
     serviceType: ["悉尼水工", "悉尼水管工", "持牌煤气工", "通渠", "下水道疏通", "雨水排水系统", "泵系统", "排污泵", "增压泵", "热水器安装", "热水器维修", "漏水维修", "水管爆裂", "燃气安装", "LPG/GAS 连接", "Gas fitting", "Blocked drains", "Stormwater systems", "Pump systems", "Hot water installation", "Hot water repairs"],
-    description: "Licensed plumbing and gas services across Sydney, including 24/7 emergency response, gas fitting, blocked drains, stormwater systems, pump systems, hot water installation, hot water repairs and pipework. English and Chinese service available. 中文服务包括悉尼水工、悉尼水管工、持牌煤气工、通渠、下水道疏通、雨水排水系统、泵系统、热水器安装维修、漏水维修、水管爆裂、燃气安装与 LPG/GAS 连接。",
+    description: "Licensed plumbing and gas services across Sydney for Chinese-speaking and local customers, including 24/7 emergency response, gas fitting, blocked drains, stormwater systems, pump systems, hot water installation, hot water repairs and pipework. English and Chinese service available. 中文服务包括悉尼华人水管工、悉尼水管工、悉尼煤气工、通渠、下水道疏通、雨水排水系统、泵系统、热水器安装维修、漏水维修、水管爆裂、燃气安装与 LPG/GAS 连接。",
   };
 
   const faqSchema = {
@@ -400,6 +408,21 @@ export default function Home() {
               const Icon = item.icon;
               return <div key={item.title} className="flex gap-4 border border-white/10 bg-white/[0.04] p-5"><Icon className="h-7 w-7 shrink-0 text-[#f5a623]" /><div><p className="font-display text-2xl font-bold leading-none">{item.title}</p><p className="mt-2 text-sm text-white/65">{item.detail}</p></div></div>;
             })}
+          </div>
+        </section>
+
+        <section className="bg-[#faf8f5] py-14">
+          <div className="container grid gap-8 border-l-8 border-[#f5a623] bg-white p-6 shadow-sm lg:grid-cols-[0.82fr_1.18fr] lg:items-center lg:p-8">
+            <div>
+              <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-[#b86f3c]">{t.chineseClientEyebrow}</p>
+              <h2 className="mt-3 font-display text-4xl font-bold leading-none text-[#173557] md:text-6xl">{t.chineseClientTitle}</h2>
+            </div>
+            <div>
+              <p className="text-lg leading-8 text-[#526476]">{t.chineseClientCopy}</p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {t.chineseClientTags.map((tag) => <span key={tag} className="border border-[#173557]/15 bg-[#faf8f5] px-3 py-2 text-sm font-bold text-[#173557]">{tag}</span>)}
+              </div>
+            </div>
           </div>
         </section>
 

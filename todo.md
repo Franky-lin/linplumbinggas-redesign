@@ -133,3 +133,127 @@
 - [ ] 将中文“中文搜索服务 / 客户搜索悉尼水工时...”版块改为“悉尼水管与排水服务说明”或类似客户友好标题。
 - [ ] 将英文 “Search FAQ / Sydney Plumbing Questions Customers Ask Before Calling” 改为自然的 “Common Plumbing Questions” 或客户服务问答表达。
 - [ ] 同步完成 stormwater system、pump system 与住宅热水器安装图片的服务展示更新。
+
+
+## 上线前检查与域名替换咨询
+
+- [ ] 向用户说明当前网站上线前仍建议人工复核的项目，包括电话、服务范围、中文文案、真实图片裁切和移动端显示。
+- [ ] 说明 Manus 内置发布与域名绑定流程，提醒用户需要在界面点击 Publish，而不是由助手直接发布。
+- [ ] 指导用户在 Domains 中添加 `linplumbinggas.com` 与 `www.linplumbinggas.com`，并按界面提示修改 DNS。
+- [ ] 提醒用户保留旧网站资料和 DNS 回滚信息，以便出现解析延迟或内容问题时恢复。
+
+
+## 网站已发布后的正式域名绑定
+
+- [ ] 用户已完成新版网站 Publish，下一步需要在 Manus Domains 添加 `linplumbinggas.com` 与 `www.linplumbinggas.com`。
+- [ ] 获取 Manus 为两个域名生成的 DNS 记录后，再到 Google Domains / Squarespace Domains 修改对应网站记录。
+- [ ] 修改前截图保存当前 DNS；只处理网站相关的 `@`、`www`、A、CNAME 记录，不修改 MX/TXT 邮箱记录。
+- [ ] DNS 生效后检查 `https://linplumbinggas.com`、`https://www.linplumbinggas.com`、电话按钮、中文切换、Terms 与主要服务页面。
+
+
+## 域名设置界面图文指引
+
+- [ ] 用户找不到 Manus 项目管理界面的 Settings / Domains，需要通过截图或图文方式引导。
+- [ ] 请用户上传当前 Manus 页面截图后，在截图基础上说明应点击的按钮位置。
+- [ ] 在用户进入 Domains 后，继续指导添加 `linplumbinggas.com` 与 `www.linplumbinggas.com`，并获取 DNS 记录。
+
+## 上线后 SEO 与发布跟进
+
+- [ ] 协助用户将 `linplumbinggas.com` 提交到 Google Search Console，并提交 sitemap。
+- [ ] 指导用户检查 Google 是否已索引 `linplumbinggas.com` 与 `www.linplumbinggas.com`。
+- [ ] 说明“悉尼水工”等关键词排名需要时间、索引、内容深度、本地商家资料与外部信号共同积累。
+- [ ] 向用户确认后续通过 Manus 修改网站后，需要保存检查点并重新发布，正式域名才会显示最新版本。
+- [ ] 建议用户后续补充 Google Business Profile、真实案例照片、客户评价和区域服务内容页。
+
+配套参考：当前正式域名 `linplumbinggas.com` 与 `www.linplumbinggas.com` 已在 Manus 网域设置中显示绿色勾，表示自定义域名连接成功。
+
+
+## Google Search Console 设置指导
+
+- [ ] 指导用户进入 Google Search Console，并使用 Google 账号登录。
+- [ ] 建议优先添加 Domain property：`linplumbinggas.com`，不要输入 `https://` 或 `www`。
+- [ ] 获取 Google 提供的 DNS TXT 验证记录，并指导用户在 Squarespace DNS 的 Custom records 中新增 TXT 记录。
+- [ ] 提醒用户不要删除或修改现有 MX、TXT、CNAME、A 记录，尤其是 Google Workspace 邮箱相关记录。
+- [ ] 验证通过后提交 `https://linplumbinggas.com/sitemap.xml`。
+- [ ] 使用 URL Inspection 检查 `https://linplumbinggas.com` 并请求索引。
+- [ ] 说明 Search Console 数据通常需要数天开始显示，关键词排名需要持续观察与内容积累。
+
+
+## 本地 SEO 关键词长期跟踪
+
+- [ ] 定期检查 Google Search Console 中 `linplumbinggas.com` 的索引状态、曝光、点击、平均排名与查询词。
+- [ ] 重点关注中文关键词：`悉尼水管工`、`悉尼水工`、`悉尼天然气`、`悉尼煤气工`、`悉尼热水器维修`、`悉尼热水系统`、`悉尼通渠`、`悉尼漏水维修`。
+- [ ] 重点关注英文关键词：`Sydney plumber`、`plumber Sydney`、`gas plumber Sydney`、`hot water plumber Sydney`、`blocked drain plumber Sydney`、`emergency plumber Sydney`、`licensed plumber Sydney`。
+- [ ] 如果 Search Console 显示有曝光但点击率低，优先优化标题、描述和页面首屏文案。
+- [ ] 如果相关关键词没有曝光，优先新增对应服务页面或区域页面，例如热水器维修、煤气安装、通渠、Eastwood/Chatswood/Ryde 等区域服务页。
+- [ ] 持续建议用户完善 Google Business Profile，包括服务类别、服务区域、照片、评价与网站链接。
+- [ ] 后续若用户同意，可设置每周或每两周 SEO 检查提醒。
+
+
+## 每周两次 SEO 检查安排
+
+- [ ] 用户确认希望每周检查 2 次 Lin Plumbing & Gas 的 SEO 表现，重点关注 Google Search Console 数据与本地关键词排名趋势。
+- [ ] 每次检查应覆盖索引状态、sitemap 状态、首页 URL Inspection、Search Console 查询词、曝光、点击、CTR、平均排名。
+- [ ] 重点关键词包括 `悉尼水管工`、`悉尼水工`、`悉尼天然气`、`悉尼煤气工`、`悉尼热水`、`悉尼热水器维修`、`Sydney plumber`、`gas plumber Sydney`、`hot water plumber Sydney`、`blocked drain plumber Sydney`。
+- [ ] 如果发现关键词有曝光但点击率低，建议优化 title、meta description 与首页首屏转化文案。
+- [ ] 如果关键词长期没有曝光，建议新增独立服务页、区域服务页、案例内容或完善 Google Business Profile。
+- [x] 每周两次的具体日期和时间已确认：每周一与每周四上午 9:00（悉尼时间）。
+- [x] 已创建定期 SEO 检查任务：每周一与每周四上午 9:00（悉尼时间），按固定时间检查首页收录、sitemap 状态、Search Console 曝光/点击/CTR/平均排名，以及核心中英文关键词表现。
+- [ ] 首 4–6 周以观察 Google 收录与初始曝光为主，不急于频繁改动网站；若数据表明某些服务词有曝光但点击率低，再优先调整标题、描述与首页文案。
+
+
+## 本次 Google 收录状态检查
+
+- [x] 检查 `https://linplumbinggas.com/` 与 `https://www.linplumbinggas.com/` 是否可正常访问：主域名返回 200，www 自动 301 跳转到主域名后返回 200。
+- [x] 使用公开 Google 搜索方式检查 `site:linplumbinggas.com` 是否已经出现收录结果：Google 已显示 linplumbinggas.com 相关结果。
+- [x] 已进入 `sc-domain:linplumbinggas.com` 的 Google Search Console，URL Inspection 显示 `https://linplumbinggas.com/` 为 `URL is on Google`，`Page is indexed`。
+- [x] 本次无需用户接管浏览器，当前登录状态可查看 Search Console。
+- [x] 根据检查结果说明当前是否已经“上 Google”，并给出下一步等待、再次请求索引或内容优化建议。
+
+
+## 本次中文关键词公开排名检查
+
+- [x] 使用 Google 公开搜索检查核心中文关键词，包括 `悉尼水管工`、`悉尼水工`、`悉尼煤气工`、`悉尼热水器维修`、`悉尼通渠`。
+- [x] 记录 Lin Plumbing & Gas 是否出现在自然搜索结果中，以及大致页数、自然排名位置、标题、URL 与摘要显示方式：上述中文词当前可见结果中未发现 `linplumbinggas.com` 明显自然排名。
+- [x] 同时注意 Google 是否优先展示地图包、本地商家、中文目录站或竞争对手网站：当前结果主要由广告、分类信息、中文社区、旧媒体页和本地服务商占据。
+- [x] 将公开搜索结果与 Google Search Console Performance 数据进行对照，说明当前排名只是一次搜索快照，实际排名可能因地点、设备、语言和账号而变化。
+- [x] 根据结果判断下一步是继续等待、优化首页标题描述，还是新增中文服务页/区域页：短期继续观察，后续优先考虑新增中文服务页和区域页。
+
+
+## 中文本地 SEO 后续优化建议
+
+- [x] 基于当前状态制定建议：网站已收录，但中文核心词尚未进入明显前排。
+- [x] 按优先级区分立即可做、观察 2–4 周后再做、4–6 周后根据数据决定的优化动作。
+- [x] 重点围绕中文服务页、区域服务页、Google Business Profile、客户评价、真实案例照片和标题摘要展示优化。
+- [x] 避免承诺固定排名或保证首页；用可执行、可衡量的方式说明后续 SEO 路线。
+
+
+## 定期 SEO 检测与报告确认
+
+- [x] 用户已确认需要按时检测并报告：每周一与每周四上午 9:00（悉尼时间）。
+- [x] 每次报告需要覆盖 Google 收录状态、Search Console 曝光/点击/CTR/平均排名、中文核心关键词排名，以及是否需要进一步优化。
+- [x] 重点关注关键词：`悉尼水管工`、`悉尼水工`、`悉尼煤气工`、`悉尼热水器维修`、`悉尼通渠`，并兼顾英文本地服务词。
+
+
+## SEO 检测频率评估
+
+- [x] 评估每周两次 SEO 检测对新站阶段是否合适：新站前 4–6 周每周两次合适，不算多。
+- [x] 说明什么时候适合保持每周两次，什么时候可以降为每周一次：上线初期、刚改页面、刚提交 sitemap 时保持每周两次；数据稳定后可降为每周一次。
+- [x] 给出 Lin Plumbing & Gas 当前阶段的推荐检测节奏：先保持每周一与周四 9:00，4–6 周后根据数据稳定程度再考虑调为每周一次。
+
+
+## Google 搜索展示中文化优化
+
+- [ ] 分析用户截图中自然搜索结果：标题偏英文、摘要带旧站内容、出现 `Login / 本站支持` 等不利于转化的信息。
+- [ ] 分析 Google 商家资料展示：当前商家卡片已有中文界面、电话、营业状态、照片，但自然搜索结果摘要仍需优化。
+- [ ] 对比 Chinese Panda Plumbing 等竞品显示方式，判断其是否通过标题、meta description、页面中文内容、结构化数据、Google Business Profile 和评论信息获得更详细展示。
+- [ ] 给出 Lin Plumbing & Gas 面向华人客户的优化建议，包括首页 title、description、中文首屏文案、FAQ、服务页和旧路径清理。
+- [ ] 如用户确认执行，后续可修改网站元标题、元描述和中文内容，并等待 Google 重新抓取。
+
+## 2026-05-02 Google 搜索展示中文化优化执行
+
+- [x] 更新首页 HTML title、meta description、Open Graph 和 Twitter 描述，使其更明确面向悉尼华人客户。
+- [x] 在首页靠前位置增加可见中文服务说明，覆盖悉尼水管工、悉尼煤气工、热水器维修、通渠和中文服务关键词。
+- [x] 检查结构化数据与页面可见文案是否保持一致，避免只在 meta 中堆关键词。
+- [x] 运行生产构建验证，并检查关键中文词是否已经出现在源码和构建输出中。
+- [ ] 保存新 checkpoint，并向用户说明 Google 展示更新仍需等待下一轮抓取。

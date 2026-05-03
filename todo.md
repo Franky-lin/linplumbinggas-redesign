@@ -364,5 +364,12 @@
 - [x] 已修改代碼中的圖片路徑，改為引用 `/images/...` 本地靜態路徑。
 - [x] 已移除 Manus analytics 與 runtime 對外部部署的影響，並新增 `vercel.json` 配置。
 - [x] 已執行 `pnpm build:client`，確認 Vercel 前端構建成功；部署輸出包含 17 個本地圖片且沒有殘留 `/manus-storage/` 引用。
-- [ ] 保存 checkpoint 並同步最新代碼與圖片文件到 GitHub。
-- [ ] 回報 GitHub 倉庫是否已包含所有圖片文件。
+- [x] 已保存 checkpoint 並同步最新代碼與圖片文件到 GitHub，版本 ID：`68a4ed03`。
+- [x] 已核對 GitHub 遠端 HEAD 與本地 HEAD 一致，且提交中包含 17 個 `client/public/images` 圖片文件。
+
+## 2026-05-03 移除 Made with Manus 顯示
+
+- [x] 已定位並清理網站源碼中 Manus 相關可見文字、未使用登入對話元件與調試注入資源。
+- [x] 已移除相關顯示並執行 `pnpm build:client`，確認網站構建正常且生產輸出無相關字串。
+- [ ] 保存 checkpoint 並同步到 `Franky-lin/linplumbinggas-redesign`。
+- [ ] 回報移除與 GitHub 同步結果。

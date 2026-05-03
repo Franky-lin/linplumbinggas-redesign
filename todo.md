@@ -380,5 +380,5 @@
 - [x] 已判斷 `vite: not found` 主要是因為 Vite 與相關 build plugins 位於 devDependencies，而部署環境執行 build 時未能取得這些建置工具。
 - [x] 已修正依賴與部署腳本：`build` 與 `build:client` 均改為 `vite build`，並將 Vite 與相關 build plugins 移入 `dependencies`，使外部部署執行 `pnpm build` 或 `pnpm build:client` 都能成功。
 - [x] 已完成構建驗證：目前專案目錄 `pnpm build` 成功；另以乾淨臨時目錄模擬 `pnpm install --prod --frozen-lockfile` 後執行 `pnpm build` 亦成功，確認不再出現 `vite: not found`。
-- [ ] 保存 checkpoint 並同步到 `Franky-lin/linplumbinggas-redesign`。
+- [x] 已保存 checkpoint 並同步到 `Franky-lin/linplumbinggas-redesign`：版本 `1008f8b1`。
 - [ ] 回報錯誤原因、修正內容與下一步部署方式。

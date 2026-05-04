@@ -382,3 +382,13 @@
 - [x] 已完成構建驗證：目前專案目錄 `pnpm build` 成功；另以乾淨臨時目錄模擬 `pnpm install --prod --frozen-lockfile` 後執行 `pnpm build` 亦成功，確認不再出現 `vite: not found`。
 - [x] 已保存 checkpoint 並同步到 `Franky-lin/linplumbinggas-redesign`：版本 `1008f8b1`。
 - [ ] 回報錯誤原因、修正內容與下一步部署方式。
+
+## 2026-05-04 正式網站 SEO 修復合併（先不發布）
+
+- [x] 已更新 `client/index.html`：保留現有中文 title、description、canonical、OG/Twitter 與字體；調整 robots；新增 googlebot、theme-color 與 format-detection telephone；確認 canonical 為 `https://linplumbinggas.com/`。
+- [x] 已在 `</head>` 前新增 `application/ld+json` 結構化資料，使用 `Plumber` 類型並覆蓋指定服務區、語言與 serviceType。
+- [x] 已新增或更新 `client/public/robots.txt`，允許全站抓取並指向正式 sitemap。
+- [x] 已新增或更新 `client/public/sitemap.xml`，至少包含首頁、中文首頁與指定中文服務頁；同時新增對應前端別名路由以避免 sitemap URL 進入 404。
+- [x] 已執行 `pnpm build`，並確認 `dist/public/index.html` 含 JSON-LD、canonical、robots/googlebot；`dist/public/robots.txt` 與 `dist/public/sitemap.xml` 均存在，sitemap 包含指定中文 SEO URL。
+- [x] 已準備保存 checkpoint，等待用戶確認後再發布；本次未點擊 Publish、未正式上線。
+

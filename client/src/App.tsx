@@ -28,9 +28,14 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/zh"} component={ZhHome} />
       <Route path={"/zh/"} component={ZhHome} />
+      <Route path={"/zh/sydney-plumber"} component={ZhHome} />
       <Route path={"/zh/blocked-drains"} component={BlockedDrains} />
+      <Route path={"/zh/blocked-drain"} component={BlockedDrains} />
+      <Route path={"/zh/roof-stormwater-drainage"} component={BlockedDrains} />
       <Route path={"/zh/hot-water"} component={HotWater} />
+      <Route path={"/zh/hot-water-repair"} component={HotWater} />
       <Route path={"/zh/gas"} component={Gas} />
+      <Route path={"/zh/gas-fitter"} component={Gas} />
       <Route path={"/zh/leak-repair"} component={LeakRepair} />
       <Route path={"/zh/areas/eastwood"} component={Eastwood} />
       <Route path={"/zh/areas/chatswood"} component={Chatswood} />

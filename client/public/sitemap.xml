@@ -2,103 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://linplumbinggas.com/</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linplumbinggas.com/" />
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://linplumbinggas.com/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://linplumbinggas.com/zh" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://linplumbinggas.com/zh" />
     <xhtml:link rel="alternate" hreflang="zh-Hans-AU" href="https://linplumbinggas.com/zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://linplumbinggas.com/" />
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linplumbinggas.com/" />
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://linplumbinggas.com/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://linplumbinggas.com/zh" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://linplumbinggas.com/zh" />
     <xhtml:link rel="alternate" hreflang="zh-Hans-AU" href="https://linplumbinggas.com/zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://linplumbinggas.com/" />
-  </url>
-  <url>
-    <loc>https://linplumbinggas.com/zh/sydney-plumber</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://linplumbinggas.com/zh/blocked-drain</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://linplumbinggas.com/zh/hot-water-repair</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://linplumbinggas.com/zh/gas-fitter</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://linplumbinggas.com/zh/leak-repair</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://linplumbinggas.com/zh/roof-stormwater-drainage</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://linplumbinggas.com/zh/blocked-drains</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh/hot-water</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh/gas</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://linplumbinggas.com/zh/leak-repair</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh/areas/eastwood</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh/areas/chatswood</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh/areas/hurstville</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh/areas/burwood</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://linplumbinggas.com/zh/areas/epping-ryde</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
   </url>

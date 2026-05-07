@@ -56,8 +56,13 @@ function setLink(rel: string, href: string, hreflang?: string) {
   link.setAttribute("href", href);
 }
 
+function pairedEnglishHref(path: string) {
+  return path === "/zh" ? `${SITE_URL}/` : `${SITE_URL}/`;
+}
+
 export function SeoHead({ meta, schema }: { meta: SeoMeta; schema?: Record<string, unknown> | Record<string, unknown>[] }) {
   const canonical = `${SITE_URL}${meta.path}`;
+  const englishHref = pairedEnglishHref(meta.path);
 
   useEffect(() => {
     document.documentElement.lang = "zh-Hans";
@@ -68,13 +73,17 @@ export function SeoHead({ meta, schema }: { meta: SeoMeta; schema?: Record<strin
     setNamedMeta('meta[property="og:description"]', "property", "og:description", meta.description);
     setNamedMeta('meta[property="og:url"]', "property", "og:url", canonical);
     setNamedMeta('meta[property="og:locale"]', "property", "og:locale", "zh_CN");
+    setNamedMeta('meta[property="og:locale:alternate"]', "property", "og:locale:alternate", "en_AU");
     setNamedMeta('meta[name="twitter:title"]', "name", "twitter:title", meta.title);
     setNamedMeta('meta[name="twitter:description"]', "name", "twitter:description", meta.description);
     setLink("canonical", canonical);
-    setLink("alternate", `${SITE_URL}/`, "en-AU");
-    setLink("alternate", `${SITE_URL}/zh`, "zh-Hans-AU");
-    setLink("alternate", canonical, "x-default");
-  }, [canonical, meta.description, meta.keywords, meta.title]);
+    setLink("alternate", englishHref, "en");
+    setLink("alternate", englishHref, "en-AU");
+    setLink("alternate", canonical, "zh");
+    setLink("alternate", canonical, "zh-Hans");
+    setLink("alternate", canonical, "zh-Hans-AU");
+    setLink("alternate", englishHref, "x-default");
+  }, [canonical, englishHref, meta.description, meta.keywords, meta.title]);
 
   return schema ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} /> : null;
 }

@@ -4,7 +4,7 @@ This page keeps a practical Sydney trade identity: deep navy structure, safety-y
 Question for every style decision: Does this choice reinforce or dilute our design philosophy?
 */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ArrowRight,
   Building2,
@@ -25,6 +25,33 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BUSINESS, REAL_PHOTOS } from "@/lib/linAssets";
+
+const SITE_URL = "https://linplumbinggas.com";
+const HOME_TITLE = "Lin Plumbing & Gas | Sydney Plumber & Licensed Gas Fitter";
+const HOME_DESCRIPTION = "Lin Plumbing & Gas provides licensed Sydney plumbing, gas fitting, blocked drains, hot water repairs, leak repairs, stormwater drainage and 24/7 emergency response. English and Chinese service available across Eastwood, Chatswood, Hurstville, Burwood, Epping, Ryde and greater Sydney.";
+const HOME_KEYWORDS = "Sydney plumber, Sydney gas fitter, emergency plumber Sydney, blocked drains Sydney, hot water repairs Sydney, leak repairs Sydney, stormwater drainage Sydney, Chinese speaking plumber Sydney, Eastwood plumber, Chatswood plumber, Hurstville plumber, Burwood plumber";
+
+function setNamedMeta(selector: string, attrName: "name" | "property", attrValue: string, content: string) {
+  let meta = document.head.querySelector<HTMLMetaElement>(selector);
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.setAttribute(attrName, attrValue);
+    document.head.appendChild(meta);
+  }
+  meta.setAttribute("content", content);
+}
+
+function setLink(rel: string, href: string, hreflang?: string) {
+  const selector = hreflang ? `link[rel="${rel}"][hreflang="${hreflang}"]` : `link[rel="${rel}"]`;
+  let link = document.head.querySelector<HTMLLinkElement>(selector);
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", rel);
+    if (hreflang) link.setAttribute("hreflang", hreflang);
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", href);
+}
 
 type Lang = "en" | "zh";
 
@@ -323,6 +350,28 @@ export default function Home() {
   const [lang, setLang] = useState<Lang>("en");
   const [showTerms, setShowTerms] = useState(false);
   const t = copy[lang];
+
+  useEffect(() => {
+    const canonical = `${SITE_URL}/`;
+    document.documentElement.lang = lang === "zh" ? "zh-Hans-AU" : "en-AU";
+    document.title = HOME_TITLE;
+    setNamedMeta('meta[name="description"]', "name", "description", HOME_DESCRIPTION);
+    setNamedMeta('meta[name="keywords"]', "name", "keywords", HOME_KEYWORDS);
+    setNamedMeta('meta[property="og:title"]', "property", "og:title", HOME_TITLE);
+    setNamedMeta('meta[property="og:description"]', "property", "og:description", HOME_DESCRIPTION);
+    setNamedMeta('meta[property="og:url"]', "property", "og:url", canonical);
+    setNamedMeta('meta[property="og:locale"]', "property", "og:locale", "en_AU");
+    setNamedMeta('meta[property="og:locale:alternate"]', "property", "og:locale:alternate", "zh_CN");
+    setNamedMeta('meta[name="twitter:title"]', "name", "twitter:title", HOME_TITLE);
+    setNamedMeta('meta[name="twitter:description"]', "name", "twitter:description", HOME_DESCRIPTION);
+    setLink("canonical", canonical);
+    setLink("alternate", canonical, "en");
+    setLink("alternate", canonical, "en-AU");
+    setLink("alternate", `${SITE_URL}/zh`, "zh");
+    setLink("alternate", `${SITE_URL}/zh`, "zh-Hans");
+    setLink("alternate", `${SITE_URL}/zh`, "zh-Hans-AU");
+    setLink("alternate", canonical, "x-default");
+  }, [lang]);
 
   const schema = {
     "@context": "https://schema.org",

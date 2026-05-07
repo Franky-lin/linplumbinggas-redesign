@@ -4,6 +4,7 @@ This routing file preserves the bilingual site structure while keeping the exist
 Question for every routing decision: Does this choice reinforce or dilute our design philosophy?
 */
 
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -17,10 +18,36 @@ import Gas from "@/pages/zh/Gas";
 import HotWater from "@/pages/zh/HotWater";
 import LeakRepair from "@/pages/zh/LeakRepair";
 import ZhHome from "@/pages/ZhHome";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+
+function CanonicalRedirect({ to }: { to: string }) {
+  const [, navigate] = useLocation();
+
+  useEffect(() => {
+    navigate(to, { replace: true });
+  }, [navigate, to]);
+
+  return null;
+}
+
+function RedirectToZhHome() {
+  return <CanonicalRedirect to="/zh" />;
+}
+
+function RedirectToBlockedDrains() {
+  return <CanonicalRedirect to="/zh/blocked-drains" />;
+}
+
+function RedirectToHotWater() {
+  return <CanonicalRedirect to="/zh/hot-water" />;
+}
+
+function RedirectToGas() {
+  return <CanonicalRedirect to="/zh/gas" />;
+}
 
 function Router() {
   return (
@@ -28,14 +55,14 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/zh"} component={ZhHome} />
       <Route path={"/zh/"} component={ZhHome} />
-      <Route path={"/zh/sydney-plumber"} component={ZhHome} />
+      <Route path={"/zh/sydney-plumber"} component={RedirectToZhHome} />
       <Route path={"/zh/blocked-drains"} component={BlockedDrains} />
-      <Route path={"/zh/blocked-drain"} component={BlockedDrains} />
-      <Route path={"/zh/roof-stormwater-drainage"} component={BlockedDrains} />
+      <Route path={"/zh/blocked-drain"} component={RedirectToBlockedDrains} />
+      <Route path={"/zh/roof-stormwater-drainage"} component={RedirectToBlockedDrains} />
       <Route path={"/zh/hot-water"} component={HotWater} />
-      <Route path={"/zh/hot-water-repair"} component={HotWater} />
+      <Route path={"/zh/hot-water-repair"} component={RedirectToHotWater} />
       <Route path={"/zh/gas"} component={Gas} />
-      <Route path={"/zh/gas-fitter"} component={Gas} />
+      <Route path={"/zh/gas-fitter"} component={RedirectToGas} />
       <Route path={"/zh/leak-repair"} component={LeakRepair} />
       <Route path={"/zh/areas/eastwood"} component={Eastwood} />
       <Route path={"/zh/areas/chatswood"} component={Chatswood} />

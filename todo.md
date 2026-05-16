@@ -83,9 +83,9 @@
 
 | 状态 | 项目 | 说明 |
 |---|---|---|
-| [x] | 审查本地项目文件 | 已确认当前永久网站项目包含 HTML、CSS、JS/TS、配置与必要资源文件。 |
-| [x] | 审查 GitHub 仓库状态 | 已确认目标仓库 `Franky-lin/linplumbinggas-redesign` 远端为 `origin`，当前分支为 `main`，并已拉取远端最新状态。 |
-| [x] | 排除冗余文件 | 已排除 node_modules、dist、.manus-logs、.webdev、缓存和临时日志文件；未把构建产物或依赖目录纳入提交。 |
-| [x] | 同步完整网站代码 | 已同步当前设计网站的 HTML、CSS、JS/TS、React 页面、配置文件、公共 SEO 文件与运行所需文件到目标仓库。 |
-| [x] | 验证 SEO 核心文件 | 已生成 `github_sync_seo_verification.md`；确认 `sitemap.xml`、`robots.txt`、meta/canonical/hreflang、Schema、H 标签与图片 alt 相关代码均保留。 |
-| [x] | 提交并推送 | 已创建提交 `d96033e`（Sync permanent site design and SEO architecture）并推送到 GitHub `main` 分支。 |
+| [ ] | 审查本地项目文件 | 确认当前永久网站项目包含所有 HTML、CSS、JS、配置与必要资源文件。 |
+| [ ] | 审查 GitHub 仓库状态 | 使用已授权仓库 `Franky-lin/linplumbinggas-redesign`，确认远端分支与同步方式。 |
+| [ ] | 排除冗余文件 | 仅排除 node_modules、构建缓存、日志、临时文件和与运行/SEO 无关的本地缓存。 |
+| [ ] | 同步完整网站代码 | 将当前设计网站的前端源码、公共 SEO 文件、配置文件与运行所需文件同步到 GitHub。 |
+| [ ] | 验证 SEO 核心文件 | 确认 `sitemap.xml`、`robots.txt`、meta/canonical/hreflang、Schema、H 标签与图片 alt 相关代码已保留。 |
+| [ ] | 提交并推送 | 创建清晰 commit 并推送到 GitHub，随后向 Franky 汇报同步结果。 |

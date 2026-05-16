@@ -37,42 +37,33 @@
       {
         "@context": "https://schema.org",
         "@type": "Plumber",
-        "name": "Lin Plumbing & Gas",
-        "url": "https://linplumbinggas.com/",
+        "name": "Lin Plumbing & Gas Pty Ltd",
+        "image": "https://linplumbinggas.com/manus-storage/logo_white_transparent_c489426c_ede5fd7f.png",
+        "url": "https://linplumbinggas.com",
         "telephone": "+61430731989",
-        "areaServed": [
-          {
-            "@type": "Place",
-            "name": "Sydney NSW"
-          },
-          {
-            "@type": "Place",
-            "name": "Eastwood NSW"
-          },
-          {
-            "@type": "Place",
-            "name": "Chatswood NSW"
-          },
-          {
-            "@type": "Place",
-            "name": "Hurstville NSW"
-          },
-          {
-            "@type": "Place",
-            "name": "Burwood NSW"
-          }
-        ],
+        "email": "franky@linplumbinggas.com",
+        "description": "悉尼持牌水管工与煤气工，提供通渠、热水器维修、漏水维修、雨水排水系统及24小时紧急服务。中文英文均可沟通。",
+        "areaServed": ["Eastwood","Chatswood","Hurstville","Burwood","Epping","Ryde","Parramatta","Sydney"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "NSW",
+          "addressCountry": "AU"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
         "availableLanguage": ["zh", "en"],
-        "serviceType": [
-          "悉尼水管工",
-          "悉尼华人水管工",
-          "通渠",
-          "热水器维修",
-          "漏水维修",
-          "排水管维修",
-          "屋顶雨水系统改造",
-          "持牌煤气工"
-        ]
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Plumbing & Gas Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "通渠 Blocked Drains"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "热水器维修 Hot Water Repairs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "煤气安装 Gas Fitting"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "漏水维修 Leak Repairs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "雨水排水系统 Stormwater Drainage"}}
+          ]
+        },
+        "sameAs": []
       }
     </script>
   </head>

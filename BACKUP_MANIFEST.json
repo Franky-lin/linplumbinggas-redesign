@@ -1,0 +1,36 @@
+{
+  "backup": {
+    "date": "2026-06-02",
+    "website": "https://linplumbinggas.com",
+    "type": "complete_backup",
+    "status": "completed"
+  },
+  "content": {
+    "source_code": {
+      "pages": 13,
+      "components": 50,
+      "typescript_files": 70,
+      "total_lines": 5000
+    },
+    "media": {
+      "images": 20,
+      "total_size_mb": 12.5,
+      "formats": ["webp", "png"]
+    },
+    "documentation": {
+      "files": 4,
+      "includes": ["SEO", "Content", "Forms", "URLs"]
+    }
+  },
+  "business_info": {
+    "company": "Lin Plumbing & Gas Pty Ltd",
+    "phone": "0430 731 989",
+    "email": "franky@linplumbinggas.com",
+    "lic_no": "459684C",
+    "abn": "92 670 077 102"
+  },
+  "github": {
+    "repository": "https://github.com/Franky-lin/linplumbinggas-redesign",
+    "branch": "main"
+  }
+}
